@@ -1,7 +1,14 @@
-import { expect, test } from "@playwright/test";
+import { expect, test, type Page } from "@playwright/test";
+
+async function switchToSeason3(page: Page) {
+  await page.getByRole("combobox", { name: "シーズンを選択" }).selectOption({
+    label: "シーズン3「銀河に響く歌声」",
+  });
+}
 
 test("clicking a sidebar tab switches the active tab and updates task list", async ({ page }) => {
   await page.goto("/");
+  await switchToSeason3(page);
 
   // Initially weekly-score tab is active - its tasks should be visible
   const weeklyTab = page.getByRole("tab", { name: /今週の達成スコア/ });
@@ -21,6 +28,7 @@ test("clicking a sidebar tab switches the active tab and updates task list", asy
 
 test("challenge checkbox can be toggled and persisted", async ({ page }) => {
   await page.goto("/");
+  await switchToSeason3(page);
 
   await expect(page.getByRole("heading", { name: "カオスゼロナイトメア挑戦課題チェッカー" })).toBeVisible();
 
@@ -33,11 +41,13 @@ test("challenge checkbox can be toggled and persisted", async ({ page }) => {
   await expect(checkedTask).toBeChecked();
 
   await page.reload();
+  await switchToSeason3(page);
   await expect(checkedTask).toBeChecked();
 });
 
 test("checking a task checkbox increases the tab progress rate", async ({ page }) => {
   await page.goto("/");
+  await switchToSeason3(page);
 
   const weeklyTab = page.getByRole("tab", { name: /今週の達成スコア/ });
   await expect(weeklyTab).toContainText("0/5 (0%)");

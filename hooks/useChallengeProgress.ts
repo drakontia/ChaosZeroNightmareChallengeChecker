@@ -2,20 +2,38 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { ChallengeTask } from "@/types";
-import { getAchievedTaskIds, getWeekStartTimestamp, LOCAL_STORAGE_KEY, WEEKLY_RESET_KEY } from "@/lib";
+import {
+  getAchievedTaskIds,
+  getSeasonCheckedStorageKey,
+  getSeasonWeeklyResetKey,
+  getWeekStartTimestamp,
+} from "@/lib";
 
 export const useChallengeProgress = (
   tasks: ChallengeTask[],
   weeklyScoreTaskIds: string[] = [],
+  seasonId = "season-3",
 ) => {
   const [checkedTaskIds, setCheckedTaskIds] = useState<string[]>([]);
   const [isHydrated, setIsHydrated] = useState(false);
+  const weeklyScoreTaskIdsKey = useMemo(
+    () => weeklyScoreTaskIds.join("|"),
+    [weeklyScoreTaskIds],
+  );
+  const checkedStorageKey = useMemo(
+    () => getSeasonCheckedStorageKey(seasonId),
+    [seasonId],
+  );
+  const weeklyResetStorageKey = useMemo(
+    () => getSeasonWeeklyResetKey(seasonId),
+    [seasonId],
+  );
 
   useEffect(() => {
     const currentWeekStart = getWeekStartTimestamp();
 
     let restored: string[] = [];
-    const raw = window.localStorage.getItem(LOCAL_STORAGE_KEY);
+    const raw = window.localStorage.getItem(checkedStorageKey);
     if (raw) {
       try {
         const parsed = JSON.parse(raw) as unknown;
@@ -25,26 +43,28 @@ export const useChallengeProgress = (
           );
         }
       } catch {
-        window.localStorage.removeItem(LOCAL_STORAGE_KEY);
+        window.localStorage.removeItem(checkedStorageKey);
       }
     }
 
-    const storedWeekStart = Number(window.localStorage.getItem(WEEKLY_RESET_KEY) ?? 0);
+    const storedWeekStart = Number(
+      window.localStorage.getItem(weeklyResetStorageKey) ?? 0,
+    );
     if (weeklyScoreTaskIds.length > 0 && currentWeekStart > storedWeekStart) {
       const weeklySet = new Set(weeklyScoreTaskIds);
       restored = restored.filter((id) => !weeklySet.has(id));
     }
 
-    window.localStorage.setItem(WEEKLY_RESET_KEY, String(currentWeekStart));
+    window.localStorage.setItem(weeklyResetStorageKey, String(currentWeekStart));
 
     setCheckedTaskIds(restored);
     setIsHydrated(true);
-  }, []);
+  }, [checkedStorageKey, seasonId, weeklyResetStorageKey, weeklyScoreTaskIdsKey]);
 
   useEffect(() => {
     if (!isHydrated) return;
-    window.localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(checkedTaskIds));
-  }, [isHydrated, checkedTaskIds]);
+    window.localStorage.setItem(checkedStorageKey, JSON.stringify(checkedTaskIds));
+  }, [checkedStorageKey, isHydrated, checkedTaskIds]);
 
   const achievedTaskIds = useMemo(
     () => getAchievedTaskIds(tasks, checkedTaskIds),

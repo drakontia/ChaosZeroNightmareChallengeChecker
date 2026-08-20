@@ -1,5 +1,6 @@
-import { ChallengeTab, Season } from "@/types";
+import { ChallengeCategory, ChallengeTab, Reward, RewardKey, Season } from "@/types";
 import { rewardOf } from "./rewardHelper";
+import season4Rows from "./season4Rows.json";
 
 export const challengeTabs: ChallengeTab[] = [
   { id: "weekly-score", labelKey: "tabs.weeklyScore" },
@@ -8,6 +9,180 @@ export const challengeTabs: ChallengeTab[] = [
   { id: "battle-report", labelKey: "tabs.battleReport" },
   { id: "annihilation", labelKey: "tabs.annihilation" },
 ];
+
+type Season4Row = {
+  category: string;
+  title: string;
+  description: string;
+  reward: string;
+  progress: string;
+  parent: string;
+};
+
+const SEASON4_CATEGORY_MAP: Record<string, ChallengeCategory> = {
+  "今週の達成スコア": "weekly-score",
+  "任務記録": "mission-log",
+  "カオス究明": "chaos-analysis",
+  "戦闘報告": "battle-report",
+  "壊滅作戦": "annihilation",
+};
+
+const SEASON4_ID_PREFIX: Record<ChallengeCategory, string> = {
+  "weekly-score": "ws",
+  "mission-log": "ml",
+  "chaos-analysis": "ca",
+  "battle-report": "br",
+  annihilation: "an",
+};
+
+const SEASON4_REWARD_MAP: Record<string, RewardKey> = {
+  クリスタル: "crystal",
+  ユニット: "unit",
+  "サポートデータ（上級）": "support_data",
+  "戦闘メモリー(上級)": "battle_memory",
+  潜在ディスク: "potencial_disk",
+  記憶の粒子: "memory_particles",
+  記憶の痕跡: "memory_traces",
+  ユニバーサル支援認定書: "universal_support_certificate",
+  ユニバーサル戦術認定書: "universal_tactics_certificate",
+};
+
+function parseSeason4RewardPart(rawPart: string): Reward | null {
+  const part = rawPart.replace(/\s+/g, " ").trim();
+  if (!part) {
+    return null;
+  }
+
+  const withAmount = part.match(/^(.+?)×\s*([\d,]+)$/);
+  if (withAmount) {
+    const [, rawName, rawAmount] = withAmount;
+    const rewardName = rawName.trim();
+    const amount = Number(rawAmount.replace(/,/g, ""));
+    const mapped = SEASON4_REWARD_MAP[rewardName];
+    if (mapped) {
+      return rewardOf(mapped, amount);
+    }
+    return { image: "/rewards/crystal.png", altKey: `raw:${rewardName}`, amount };
+  }
+
+  const mapped = SEASON4_REWARD_MAP[part];
+  if (mapped) {
+    return rewardOf(mapped);
+  }
+
+  return { image: "/rewards/crystal.png", altKey: `raw:${part}` };
+}
+
+function parseSeason4Rewards(rawReward: string): Reward[] {
+  const normalized = rawReward.replace(/\s+/g, " ").trim();
+  if (!normalized) {
+    return [{ image: "/rewards/crystal.png", altKey: "raw:報酬未設定" }];
+  }
+
+  const rewards = normalized
+    .split("、")
+    .map((part) => parseSeason4RewardPart(part))
+    .filter((reward): reward is Reward => reward !== null);
+
+  return rewards.length > 0
+    ? rewards
+    : [{ image: "/rewards/crystal.png", altKey: "raw:報酬未設定" }];
+}
+
+function parseSeason4ProgressMax(rawProgress: string): number | undefined {
+  const matched = rawProgress.match(/^\s*\d+\s*\/\s*([\d,]+)\s*$/);
+  if (!matched) {
+    return undefined;
+  }
+  return Number(matched[1].replace(/,/g, ""));
+}
+
+function normalizeParentNames(rawParent: string): string[] {
+  return rawParent
+    .split("、")
+    .map((name) => name.trim())
+    .filter(Boolean);
+}
+
+function createSeason4(): Season {
+  const rows = season4Rows as Season4Row[];
+  const categoryIndexes: Record<ChallengeCategory, number> = {
+    "weekly-score": 0,
+    "mission-log": 0,
+    "chaos-analysis": 0,
+    "battle-report": 0,
+    annihilation: 0,
+  };
+
+  const normalizedRows = rows.map((row) => {
+    const categoryId = SEASON4_CATEGORY_MAP[row.category];
+    if (!categoryId) {
+      throw new Error(`Unknown season4 category: ${row.category}`);
+    }
+
+    categoryIndexes[categoryId] += 1;
+    const index = categoryIndexes[categoryId];
+
+    return {
+      ...row,
+      categoryId,
+      id: `s4-${SEASON4_ID_PREFIX[categoryId]}-${index}`,
+      parentNames: normalizeParentNames(row.parent),
+    };
+  });
+
+  const titleToIds = new Map<string, string[]>();
+  for (const row of normalizedRows) {
+    const ids = titleToIds.get(row.title) ?? [];
+    ids.push(row.id);
+    titleToIds.set(row.title, ids);
+  }
+
+  const childIdsByParentId = new Map<string, Set<string>>();
+  for (const row of normalizedRows) {
+    for (const parentName of row.parentNames) {
+      const parentIds = titleToIds.get(parentName) ?? [];
+      for (const parentId of parentIds) {
+        const children = childIdsByParentId.get(parentId) ?? new Set<string>();
+        children.add(row.id);
+        childIdsByParentId.set(parentId, children);
+      }
+    }
+  }
+
+  const tasksByCategory: Record<ChallengeCategory, Season["categories"][number]["tasks"]> = {
+    "weekly-score": [],
+    "mission-log": [],
+    "chaos-analysis": [],
+    "battle-report": [],
+    annihilation: [],
+  };
+
+  for (const row of normalizedRows) {
+    const childIds = childIdsByParentId.get(row.id);
+    const isDerived = Boolean(childIds && childIds.size > 0);
+
+    tasksByCategory[row.categoryId].push({
+      id: row.id,
+      status: isDerived ? "derived" : "manual",
+      titleKey: `raw:${row.title}`,
+      descriptionKey: `raw:${row.description}`,
+      rewards: parseSeason4Rewards(row.reward),
+      progressMax: isDerived ? undefined : parseSeason4ProgressMax(row.progress),
+      isChild: row.parentNames.length > 0,
+      childIds: childIds ? [...childIds] : undefined,
+    });
+  }
+
+  return {
+    id: "season-4",
+    nameKey: "season.s4",
+    categories: challengeTabs.map((tab) => ({
+      id: tab.id,
+      tasks: tasksByCategory[tab.id],
+    })),
+  };
+}
 
 export const seasons: Season[] = [
   {
@@ -744,6 +919,8 @@ export const seasons: Season[] = [
       },
     ],
   },
+  createSeason4(),
 ];
 
-export const defaultSeasonId = seasons[0].id;
+export const defaultSeasonId =
+  seasons.find((season) => season.id === "season-4")?.id ?? seasons[0].id;

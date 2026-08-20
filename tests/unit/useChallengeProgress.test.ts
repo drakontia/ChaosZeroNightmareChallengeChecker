@@ -1,8 +1,12 @@
 import { afterEach, beforeEach, describe, expect, test, vi } from "vitest";
 import { renderHook, act } from "@testing-library/react";
 import { useChallengeProgress } from "@/hooks/useChallengeProgress";
-import { LOCAL_STORAGE_KEY, WEEKLY_RESET_KEY } from "@/lib";
+import { getSeasonCheckedStorageKey, getSeasonWeeklyResetKey } from "@/lib";
 import { ChallengeTask } from "@/types";
+
+const TEST_SEASON_ID = "season-3";
+const CHECKED_KEY = getSeasonCheckedStorageKey(TEST_SEASON_ID);
+const WEEKLY_KEY = getSeasonWeeklyResetKey(TEST_SEASON_ID);
 
 const manualTask: ChallengeTask = {
   id: "weekly-1",
@@ -58,7 +62,7 @@ describe("useChallengeProgress", () => {
 
   describe("localStorage restoration on mount", () => {
     test("restores saved checkedTaskIds from localStorage", async () => {
-      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(["weekly-1", "weekly-2"]));
+      localStorage.setItem(CHECKED_KEY, JSON.stringify(["weekly-1", "weekly-2"]));
 
       const { result } = renderHook(() => useChallengeProgress(allTasks));
 
@@ -72,18 +76,18 @@ describe("useChallengeProgress", () => {
     });
 
     test("clears invalid JSON and starts empty when stored value is not parseable", () => {
-      localStorage.setItem(LOCAL_STORAGE_KEY, "not-valid-json{{{");
+      localStorage.setItem(CHECKED_KEY, "not-valid-json{{{");
 
       const { result } = renderHook(() => useChallengeProgress(allTasks));
 
       // State is empty after the bad value is discarded
       expect(result.current.checkedTaskIds).toEqual([]);
       // The write effect then persists the empty array, so the key holds "[]"
-      expect(JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) ?? "null")).toEqual([]);
+      expect(JSON.parse(localStorage.getItem(CHECKED_KEY) ?? "null")).toEqual([]);
     });
 
     test("starts empty when stored value is a non-array JSON value", () => {
-      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify({ id: "weekly-1" }));
+      localStorage.setItem(CHECKED_KEY, JSON.stringify({ id: "weekly-1" }));
 
       const { result } = renderHook(() => useChallengeProgress(allTasks));
 
@@ -91,7 +95,7 @@ describe("useChallengeProgress", () => {
     });
 
     test("filters out non-string items from stored array", () => {
-      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(["weekly-1", 42, null, "weekly-2"]));
+      localStorage.setItem(CHECKED_KEY, JSON.stringify(["weekly-1", 42, null, "weekly-2"]));
 
       const { result } = renderHook(() => useChallengeProgress(allTasks));
 
@@ -111,7 +115,7 @@ describe("useChallengeProgress", () => {
     });
 
     test("removes an already-checked task from checkedTaskIds", () => {
-      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(["weekly-1"]));
+      localStorage.setItem(CHECKED_KEY, JSON.stringify(["weekly-1"]));
 
       const { result } = renderHook(() => useChallengeProgress(allTasks));
 
@@ -182,12 +186,12 @@ describe("useChallengeProgress", () => {
         result.current.toggleTask(manualTask);
       });
 
-      const stored = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) ?? "[]");
+      const stored = JSON.parse(localStorage.getItem(CHECKED_KEY) ?? "[]");
       expect(stored).toContain("weekly-1");
     });
 
     test("updates localStorage after toggling a task off", () => {
-      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(["weekly-1", "weekly-2"]));
+      localStorage.setItem(CHECKED_KEY, JSON.stringify(["weekly-1", "weekly-2"]));
 
       const { result } = renderHook(() => useChallengeProgress(allTasks));
 
@@ -195,7 +199,7 @@ describe("useChallengeProgress", () => {
         result.current.toggleTask(manualTask);
       });
 
-      const stored = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) ?? "[]");
+      const stored = JSON.parse(localStorage.getItem(CHECKED_KEY) ?? "[]");
       expect(stored).not.toContain("weekly-1");
       expect(stored).toContain("weekly-2");
     });
@@ -235,10 +239,10 @@ describe("useChallengeProgress", () => {
     test("clears weekly-score task IDs when stored week start is from a previous week", () => {
       // Stored data has both ws and non-ws IDs, but the week start is from last week
       localStorage.setItem(
-        LOCAL_STORAGE_KEY,
+        CHECKED_KEY,
         JSON.stringify([nonWeeklyTaskId, weeklyTaskId]),
       );
-      localStorage.setItem(WEEKLY_RESET_KEY, String(prevMondayAfter3am));
+      localStorage.setItem(WEEKLY_KEY, String(prevMondayAfter3am));
 
       const { result } = renderHook(() =>
         useChallengeProgress(allTasksWithWs, weeklyScoreTaskIds),
@@ -249,10 +253,10 @@ describe("useChallengeProgress", () => {
 
     test("preserves non-weekly task IDs when stored week start is from a previous week", () => {
       localStorage.setItem(
-        LOCAL_STORAGE_KEY,
+        CHECKED_KEY,
         JSON.stringify([nonWeeklyTaskId, weeklyTaskId]),
       );
-      localStorage.setItem(WEEKLY_RESET_KEY, String(prevMondayAfter3am));
+      localStorage.setItem(WEEKLY_KEY, String(prevMondayAfter3am));
 
       const { result } = renderHook(() =>
         useChallengeProgress(allTasksWithWs, weeklyScoreTaskIds),
@@ -263,10 +267,10 @@ describe("useChallengeProgress", () => {
 
     test("preserves all task IDs when stored week start is in the current week", () => {
       localStorage.setItem(
-        LOCAL_STORAGE_KEY,
+        CHECKED_KEY,
         JSON.stringify([nonWeeklyTaskId, weeklyTaskId]),
       );
-      localStorage.setItem(WEEKLY_RESET_KEY, String(currentWeekStart));
+      localStorage.setItem(WEEKLY_KEY, String(currentWeekStart));
 
       const { result } = renderHook(() =>
         useChallengeProgress(allTasksWithWs, weeklyScoreTaskIds),
@@ -277,31 +281,31 @@ describe("useChallengeProgress", () => {
     });
 
     test("updates WEEKLY_RESET_KEY to the current week start after reset", () => {
-      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify([weeklyTaskId]));
-      localStorage.setItem(WEEKLY_RESET_KEY, String(prevMondayAfter3am));
+      localStorage.setItem(CHECKED_KEY, JSON.stringify([weeklyTaskId]));
+      localStorage.setItem(WEEKLY_KEY, String(prevMondayAfter3am));
 
       renderHook(() => useChallengeProgress(allTasksWithWs, weeklyScoreTaskIds));
 
-      const stored = localStorage.getItem(WEEKLY_RESET_KEY);
+      const stored = localStorage.getItem(WEEKLY_KEY);
       expect(Number(stored)).toBe(currentWeekStart);
     });
 
     test("sets WEEKLY_RESET_KEY when not previously stored", () => {
-      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify([weeklyTaskId]));
+      localStorage.setItem(CHECKED_KEY, JSON.stringify([weeklyTaskId]));
       // No WEEKLY_RESET_KEY stored → treated as first visit
 
       renderHook(() => useChallengeProgress(allTasksWithWs, weeklyScoreTaskIds));
 
-      const stored = localStorage.getItem(WEEKLY_RESET_KEY);
+      const stored = localStorage.getItem(WEEKLY_KEY);
       expect(Number(stored)).toBe(currentWeekStart);
     });
 
     test("works with default (empty) weeklyScoreTaskIds — no tasks cleared", () => {
       localStorage.setItem(
-        LOCAL_STORAGE_KEY,
+        CHECKED_KEY,
         JSON.stringify([nonWeeklyTaskId]),
       );
-      localStorage.setItem(WEEKLY_RESET_KEY, String(prevMondayAfter3am));
+      localStorage.setItem(WEEKLY_KEY, String(prevMondayAfter3am));
 
       // Pass empty weekly task IDs → nothing should be cleared
       const { result } = renderHook(() =>
@@ -309,6 +313,52 @@ describe("useChallengeProgress", () => {
       );
 
       expect(result.current.checkedTaskIds).toContain(nonWeeklyTaskId);
+    });
+
+    describe("season-scoped persistence", () => {
+      const season3Task: ChallengeTask = {
+        id: "s3-task",
+        status: "manual",
+        titleKey: "tasks.s3.title",
+        descriptionKey: "tasks.s3.description",
+      };
+      const season4Task: ChallengeTask = {
+        id: "s4-task",
+        status: "manual",
+        titleKey: "tasks.s4.title",
+        descriptionKey: "tasks.s4.description",
+      };
+
+      test("restores only the selected season's checked ids", () => {
+        localStorage.setItem("chaos-zero-nightmare-checked-task-ids:season-3", JSON.stringify(["s3-task"]));
+        localStorage.setItem("chaos-zero-nightmare-checked-task-ids:season-4", JSON.stringify(["s4-task"]));
+
+        const { result } = renderHook(() =>
+          useChallengeProgress([season4Task], [], "season-4"),
+        );
+
+        expect(result.current.checkedTaskIds).toEqual(["s4-task"]);
+      });
+
+      test("writing season-4 progress does not overwrite season-3 progress", () => {
+        localStorage.setItem("chaos-zero-nightmare-checked-task-ids:season-3", JSON.stringify(["s3-task"]));
+        localStorage.setItem("chaos-zero-nightmare-checked-task-ids:season-4", JSON.stringify([]));
+
+        const { result } = renderHook(() =>
+          useChallengeProgress([season4Task], [], "season-4"),
+        );
+
+        act(() => {
+          result.current.toggleTask(season4Task);
+        });
+
+        expect(
+          JSON.parse(localStorage.getItem("chaos-zero-nightmare-checked-task-ids:season-3") ?? "[]"),
+        ).toEqual(["s3-task"]);
+        expect(
+          JSON.parse(localStorage.getItem("chaos-zero-nightmare-checked-task-ids:season-4") ?? "[]"),
+        ).toEqual(["s4-task"]);
+      });
     });
   });
 });

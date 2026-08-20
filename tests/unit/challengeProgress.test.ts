@@ -3,7 +3,7 @@ import { getAchievedTaskIds, getTabCompletion, getWeekStartTimestamp } from "@/l
 import { seasons } from "@/lib/challengeData";
 
 describe("challengeProgress", () => {
-  const categories = seasons[0].categories;
+  const categories = seasons.find((season) => season.id === "season-3")?.categories ?? [];
   const tasks = categories.flatMap((category) => category.tasks);
 
   // Real Season 3 data: 5 weekly-score tasks, 30 annihilation tasks

@@ -24,7 +24,11 @@ export function ChallengeCheckerPage() {
     () => season.categories.find((c) => c.id === "weekly-score")?.tasks.map((t) => t.id) ?? [],
     [season.categories],
   );
-  const { achievedTaskIds, checkedTaskIds, toggleTask } = useChallengeProgress(seasonTasks, weeklyScoreTaskIds);
+  const { achievedTaskIds, checkedTaskIds, toggleTask } = useChallengeProgress(
+    seasonTasks,
+    weeklyScoreTaskIds,
+    season.id,
+  );
 
   const completionByTab = useMemo(
     () =>

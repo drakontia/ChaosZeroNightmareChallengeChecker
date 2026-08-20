@@ -145,6 +145,83 @@ const REWARD_MAP: Record<RewardKey, { image: string; altKey: string }> = {
     image: "/rewards/crystal.png",
     altKey: "rewards.season3.phantom_theater",
   },
+  // season 4
+  ecstatic_crystal: {
+    image: "/rewards/season4/ecstatic_crystal.png",
+    altKey: "rewards.season4.ecstatic_crystal",
+  },
+  hildes_bow: {
+    image: "/rewards/season4/hildes_bow.png",
+    altKey: "rewards.season4.hildes_bow",
+  },
+  unis_gatling_gun: {
+    image: "/rewards/season4/unis_gatling_gun.png",
+    altKey: "rewards.season4.unis_gatling_gun",
+  },
+  shattered_light_hilde: {
+    image: "/rewards/season4/shattered_light_hilde.png",
+    altKey: "rewards.season4.shattered_light_hilde",
+  },
+  cute_snake_ornament: {
+    image: "/rewards/season4/cute_snake_ornament.png",
+    altKey: "rewards.season4.cute_snake_ornament",
+  },
+  black_panther_ears: {
+    image: "/rewards/season4/black_panther_ears.png",
+    altKey: "rewards.season4.black_panther_ears",
+  },
+  shattered_light_arabella: {
+    image: "/rewards/season4/shattered_light_arabella.png",
+    altKey: "rewards.season4.shattered_light_arabella",
+  },
+  prism_lens: {
+    image: "/rewards/season4/prism_lens.png",
+    altKey: "rewards.season4.prism_lens",
+  },
+  desire_guidepost: {
+    image: "/rewards/season4/desire_guidepost.png",
+    altKey: "rewards.season4.desire_guidepost",
+  },
+  greed_without_price: {
+    image: "/rewards/season4/greed_without_price.png",
+    altKey: "rewards.season4.greed_without_price",
+  },
+  shattered_light_and_claw: {
+    image: "/rewards/season4/shattered_light_and_claw.png",
+    altKey: "rewards.season4.shattered_light_and_claw",
+  },
+  abyssal_survivor: {
+    image: "/rewards/season4/abyssal_survivor.png",
+    altKey: "rewards.season4.abyssal_survivor",
+  },
+  pagna_invader: {
+    image: "/rewards/season4/pagna_invader.png",
+    altKey: "rewards.season4.pagna_invader",
+  },
+  unknown_ecosystem: {
+    image: "/rewards/season4/unknown_ecosystem.png",
+    altKey: "rewards.season4.unknown_ecosystem",
+  },
+  glorious_metamorphosis: {
+    image: "/rewards/season4/glorious_metamorphosis.png",
+    altKey: "rewards.season4.glorious_metamorphosis",
+  },
+  prism_of_all_things: {
+    image: "/rewards/season4/prism_of_all_things.png",
+    altKey: "rewards.season4.prism_of_all_things",
+  },
+  condensed_world: {
+    image: "/rewards/season4/condensed_world.png",
+    altKey: "rewards.season4.condensed_world",
+  },
+  perfect_taxidermy: {
+    image: "/rewards/season4/perfect_taxidermy.png",
+    altKey: "rewards.season4.perfect_taxidermy",
+  },
+  proof_of_the_fittest: {
+    image: "/rewards/season4/proof_of_the_fittest.png",
+    altKey: "rewards.season4.proof_of_the_fittest",
+  },
 };
 
 export function rewardOf(key: RewardKey, amount?: number): Reward {

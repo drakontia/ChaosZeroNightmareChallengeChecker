@@ -1,0 +1,1426 @@
+[
+  {
+    "category": "今週の達成スコア",
+    "title": "【砕けた光と爪】今週の達成スコア2000達成",
+    "description": "",
+    "reward": "恍惚の結晶石×1,000、ユニット×25,000",
+    "progress": "0/2000",
+    "parent": ""
+  },
+  {
+    "category": "今週の達成スコア",
+    "title": "【砕けた光と爪】今週の達成スコア3000達成",
+    "description": "",
+    "reward": "恍惚の結晶石×1,000、クリスタル×20",
+    "progress": "0/3000",
+    "parent": ""
+  },
+  {
+    "category": "今週の達成スコア",
+    "title": "【砕けた光と爪】今週の達成スコア4000達成",
+    "description": "",
+    "reward": "恍惚の結晶石×1,000、クリスタル×20",
+    "progress": "0/4000",
+    "parent": ""
+  },
+  {
+    "category": "今週の達成スコア",
+    "title": "【砕けた光と爪】今週の達成スコア6000達成",
+    "description": "",
+    "reward": "恍惚の結晶石×1,000、クリスタル×20",
+    "progress": "0/6000",
+    "parent": ""
+  },
+  {
+    "category": "今週の達成スコア",
+    "title": "【砕けた光と爪】今週の達成スコア8000達成",
+    "description": "",
+    "reward": "恍惚の結晶石×1,000、クリスタル×20",
+    "progress": "0/8000",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "諦めるにはまだ早い",
+    "description": "ストーリー-第1章【#03 赤い点】完了",
+    "reward": "恍惚の結晶石×100、ユニット×25,000",
+    "progress": "0/1",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "灰になった微笑み",
+    "description": "ストーリー-第1章【#04 ファーストキラー】完了",
+    "reward": "恍惚の結晶石×100、ヒルデの弓",
+    "progress": "0/1",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "義務ではなく意志",
+    "description": "ストーリー-第1章【#08 目的と義務】完了",
+    "reward": "恍惚の結晶石×100、ユニのガトリングガン",
+    "progress": "0/1",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "霧が晴れ、現れた豹",
+    "description": "ストーリー-第1章【#11 霧の向こう側】完了",
+    "reward": "恍惚の結晶石×100、砕けた光と爪ヒルデ",
+    "progress": "0/1",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "毒入りの歓待",
+    "description": "ストーリー-第2章【#02 黒豹の洞穴】完了",
+    "reward": "恍惚の結晶石×100、可愛い蛇の装飾",
+    "progress": "0/1",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "打たない一手",
+    "description": "ストーリー-第2章【#04 悪手】完了",
+    "reward": "恍惚の結晶石×100、黒豹の耳",
+    "progress": "0/1",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "敵へ差し伸べた手",
+    "description": "ストーリー-第2章【#09 黒豹の欲望】完了",
+    "reward": "恍惚の結晶石×100、砕けた光と爪アラベラ",
+    "progress": "0/1",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "一人残された場所",
+    "description": "ストーリー-第2章【#11 闇の向こうの道】完了",
+    "reward": "恍惚の結晶石×100、ユニット×50,000",
+    "progress": "0/1",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "恍惚の結晶石Ⅰ",
+    "description": "恍惚の結晶石10,000個獲得",
+    "reward": "サポートデータ（上級）×4、戦闘メモリー(上級)×8",
+    "progress": "0/10000",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "恍惚の結晶石Ⅱ",
+    "description": "恍惚の結晶石30,000個獲得",
+    "reward": "サポートデータ（上級）×4、戦闘メモリー(上級)×8",
+    "progress": "0/30000",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "恍惚の結晶石Ⅲ",
+    "description": "恍惚の結晶石50,000個獲得",
+    "reward": "サポートデータ（上級）×4、戦闘メモリー(上級)×8",
+    "progress": "0/50000",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "恍惚の結晶石Ⅳ",
+    "description": "恍惚の結晶石100,000個獲得",
+    "reward": "サポートデータ（上級）×4、戦闘メモリー(上級)×8",
+    "progress": "0/100000",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "恍惚の結晶石Ⅴ",
+    "description": "恍惚の結晶石150,000個獲得",
+    "reward": "サポートデータ（上級）×4、戦闘メモリー(上級)×8",
+    "progress": "0/150000",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "砕けた光と爪の記録Ⅰ",
+    "description": "【砕けた光と爪】シーズンセーブデータ46,000TB以上獲得",
+    "reward": "恍惚の結晶石×200、記憶の痕跡×50",
+    "progress": "0/1",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "砕けた光と爪の記録Ⅰ",
+    "description": "【砕けた光と爪】シーズンセーブデータ52,000TB以上獲得",
+    "reward": "恍惚の結晶石×300、記憶の痕跡×50",
+    "progress": "0/1",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "砕けた光と爪の記録Ⅲ",
+    "description": "【砕けた光と爪】シーズンセーブデータ58,000TB以上獲得",
+    "reward": "恍惚の結晶石×400、記憶の痕跡×50",
+    "progress": "0/1",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "雨の中の誓い",
+    "description": "未確認エリア：屈折した欲望【雨の中の誓い】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "欲望収集家"
+  },
+  {
+    "category": "任務記録",
+    "title": "不運な願い",
+    "description": "未確認エリア：屈折した欲望【不運な願い】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "欲望収集家"
+  },
+  {
+    "category": "任務記録",
+    "title": "空っぽの手",
+    "description": "未確認エリア：屈折した欲望【空っぽの手】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "欲望収集家"
+  },
+  {
+    "category": "任務記録",
+    "title": "光の主",
+    "description": "未確認エリア：屈折した欲望【光の主】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "欲望収集家"
+  },
+  {
+    "category": "任務記録",
+    "title": "最後の射手",
+    "description": "未確認エリア：屈折した欲望【最後の射手】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "欲望収集家"
+  },
+  {
+    "category": "任務記録",
+    "title": "封印者",
+    "description": "未確認エリア：屈折した欲望【封印者】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "欲望収集家"
+  },
+  {
+    "category": "任務記録",
+    "title": "仲間の価値",
+    "description": "未確認エリア：屈折した欲望【仲間の価値】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "欲望収集家"
+  },
+  {
+    "category": "任務記録",
+    "title": "私の判決",
+    "description": "未確認エリア：屈折した欲望【私の判決】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "欲望収集家"
+  },
+  {
+    "category": "任務記録",
+    "title": "指先の距離",
+    "description": "未確認エリア：屈折した欲望【指先の距離】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "欲望収集家"
+  },
+  {
+    "category": "任務記録",
+    "title": "あなたの問い",
+    "description": "未確認エリア：屈折した欲望【あなたの問い】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "欲望収集家"
+  },
+  {
+    "category": "任務記録",
+    "title": "時間の分岐",
+    "description": "未確認エリア：屈折した欲望【時間の分岐】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "欲望収集家"
+  },
+  {
+    "category": "任務記録",
+    "title": "終わらない童話",
+    "description": "未確認エリア：屈折した欲望【終わらない童話】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "欲望収集家"
+  },
+  {
+    "category": "任務記録",
+    "title": "不発",
+    "description": "未確認エリア：屈折した欲望【不発】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "欲望収集家"
+  },
+  {
+    "category": "任務記録",
+    "title": "食卓の向こう",
+    "description": "未確認エリア：屈折した欲望【何もない食卓】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "欲望収集家"
+  },
+  {
+    "category": "任務記録",
+    "title": "アップデート予定",
+    "description": "未確認エリア：屈折した欲望【】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "欲望収集家"
+  },
+  {
+    "category": "任務記録",
+    "title": "同行の屈折",
+    "description": "すべての屈折した欲望キャラクター同行確認",
+    "reward": "プリズムレンズ×2",
+    "progress": "0/15",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "雨の中に残ったもの",
+    "description": "レノアと一緒に未確認エリア：屈折した欲望【雨の中の誓い】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "同行の屈折"
+  },
+  {
+    "category": "任務記録",
+    "title": "不運を分け合う方法",
+    "description": "トレサと一緒に未確認エリア：屈折した欲望【不運な願い】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "同行の屈折"
+  },
+  {
+    "category": "任務記録",
+    "title": "手の中に残ったもの",
+    "description": "ユキと一緒に未確認エリア：屈折した欲望【空っぽの手】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "同行の屈折"
+  },
+  {
+    "category": "任務記録",
+    "title": "光の前の証人",
+    "description": "テネブレアと一緒に未確認エリア：屈折した欲望【光の主】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "同行の屈折"
+  },
+  {
+    "category": "任務記録",
+    "title": "本官の意志",
+    "description": "ベリルと一緒に未確認エリア：屈折した欲望【最後の射手】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "同行の屈折"
+  },
+  {
+    "category": "任務記録",
+    "title": "巫女の信念",
+    "description": "チズルと一緒に未確認エリア：屈折した欲望【封印者】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "同行の屈折"
+  },
+  {
+    "category": "任務記録",
+    "title": "真の価値",
+    "description": "ナインと一緒に未確認エリア：屈折した欲望【仲間の価値】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "同行の屈折"
+  },
+  {
+    "category": "任務記録",
+    "title": "終わりなき宣告",
+    "description": "ティペラと一緒に未確認エリア：屈折した欲望【私の判決】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "同行の屈折"
+  },
+  {
+    "category": "任務記録",
+    "title": "届くことを祈って",
+    "description": "ミカと一緒に未確認エリア：屈折した欲望【指先の距離】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "同行の屈折"
+  },
+  {
+    "category": "任務記録",
+    "title": "私に似た問い",
+    "description": "ナージャと一緒に未確認エリア：屈折した欲望【あなたの問い】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "同行の屈折"
+  },
+  {
+    "category": "任務記録",
+    "title": "分かれた時間の中で",
+    "description": "リタと一緒に未確認エリア：屈折した欲望【時間の分岐】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "同行の屈折"
+  },
+  {
+    "category": "任務記録",
+    "title": "童話のもう一人の読者",
+    "description": "アーデルハイトと一緒に未確認エリア：屈折した欲望【終わらない童話】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "同行の屈折"
+  },
+  {
+    "category": "任務記録",
+    "title": "不発の現場",
+    "description": "ヒルデと一緒に未確認エリア：屈折した欲望【不発】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "同行の屈折"
+  },
+  {
+    "category": "任務記録",
+    "title": "見守る側",
+    "description": "アラベラと一緒に未確認エリア：屈折した欲望【何もない食卓】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "同行の屈折"
+  },
+  {
+    "category": "任務記録",
+    "title": "アップデート予定",
+    "description": "未確認エリア：屈折した欲望【】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "同行の屈折"
+  },
+  {
+    "category": "任務記録",
+    "title": "欲望収集家",
+    "description": "すべての未確認エリア：屈折した欲望確認",
+    "reward": "欲望の道しるべ",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "【砕けた光と爪】オールコレクター",
+    "description": "すべての【砕けた光と爪】シーズンコレクター挑戦課題達成",
+    "reward": "代償なき貪欲",
+    "progress": "0/2",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "【砕けた光と爪】シーズンカードコレクター",
+    "description": "【砕けた光と爪】のすべてのシーズンカード獲得",
+    "reward": "ユニバーサル支援認定書×15、ユニバーサル戦術認定書×15",
+    "progress": "0/1",
+    "parent": "【砕けた光と爪】オールコレクター"
+  },
+  {
+    "category": "任務記録",
+    "title": "【砕けた光と爪】シーズン装備コレクター",
+    "description": "【砕けた光と爪】のすべてのシーズン装備獲得",
+    "reward": "ユニバーサル支援認定書×15、ユニバーサル戦術認定書×15",
+    "progress": "0/1",
+    "parent": "【砕けた光と爪】オールコレクター"
+  },
+  {
+    "category": "任務記録",
+    "title": "砕けた光と爪",
+    "description": "【砕けた光と爪】シーズン内すべての銀河勲章挑戦課題達成",
+    "reward": "砕けた光と爪",
+    "progress": "0/1",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "アップデート予定",
+    "description": "未確認エリア：屈折した欲望【】確認",
+    "reward": "",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "アップデート予定",
+    "description": "未確認エリア：屈折した欲望【】確認",
+    "reward": "",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "アップデート予定",
+    "description": "未確認エリア：屈折した欲望【】確認",
+    "reward": "",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "アップデート予定",
+    "description": "未確認エリア：屈折した欲望【】確認",
+    "reward": "",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "アップデート予定",
+    "description": "未確認エリア：屈折した欲望【】確認",
+    "reward": "",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "任務記録",
+    "title": "アップデート予定",
+    "description": "未確認エリア：屈折した欲望【】確認",
+    "reward": "",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "カオス征服Ⅰ",
+    "description": "カオス-【万華鏡の孵化場】1段階クリア",
+    "reward": "恍惚の結晶石×100、潜在ディスク× 8",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "カオス征服Ⅱ",
+    "description": "カオス-【万華鏡の孵化場】2段階クリア",
+    "reward": "恍惚の結晶石×100、潜在ディスク× 8",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "カオス征服Ⅲ",
+    "description": "カオス-【万華鏡の孵化場】3段階クリア",
+    "reward": "恍惚の結晶石×100、潜在ディスク× 8",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "カオス征服Ⅳ",
+    "description": "カオス-【万華鏡の孵化場】4段階クリア",
+    "reward": "恍惚の結晶石×100、潜在ディスク× 8",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "カオス征服Ⅴ",
+    "description": "カオス-【万華鏡の孵化場】5段階クリア",
+    "reward": "恍惚の結晶石×100、潜在ディスク× 8",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "カオス征服Ⅵ",
+    "description": "カオス-【万華鏡の孵化場】6段階クリア",
+    "reward": "恍惚の結晶石×100、潜在ディスク× 8",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "カオス征服Ⅶ",
+    "description": "カオス-【万華鏡の孵化場】7段階クリア",
+    "reward": "恍惚の結晶石×100、潜在ディスク× 8",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "カオス征服Ⅷ",
+    "description": "カオス-【万華鏡の孵化場】8段階クリア",
+    "reward": "恍惚の結晶石×100、潜在ディスク× 8",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "カオス征服Ⅺ",
+    "description": "カオス-【万華鏡の孵化場】11段階クリア",
+    "reward": "恍惚の結晶石×100、深淵の生存者",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "胞子図鑑",
+    "description": "未確認エリア【フェロモン迷路】ですべての種類の胞子確認",
+    "reward": "クリスタル×20",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "ピオの研・究・全・集！",
+    "description": "未確認エリアでピオの日誌をすべて確認",
+    "reward": "クリスタル×20",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "3人の友の最後の記録",
+    "description": "未確認エリアアイアンレイン兵の日誌をすべて確認",
+    "reward": "クリスタル×20",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "カプセルの主",
+    "description": "未確認エリア【孵化するゆりかご】ですべてのカプセルの内部状況確認",
+    "reward": "クリスタル×20",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "間に合わせの希望",
+    "description": "希少カード【間に合わせの火薬樽】獲得",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "カトの交戦",
+    "description": "未確認エリア【貪欲の採掘場】でアイアンレイン兵【カトの交戦記録】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "3人の友の最後の記録、色と呼べるすべてのもの"
+  },
+  {
+    "category": "カオス究明",
+    "title": "軍団化観察",
+    "description": "未確認エリア【エッセンスが流れる地】でピオの【軍団化観察日誌】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "ピオの研・究・全・集！、色と呼べるすべてのもの"
+  },
+  {
+    "category": "カオス究明",
+    "title": "パグナのお土産",
+    "description": "未確認エリア【フェロモン迷路】で希少装備【パグナきのこ】獲得",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "キキッ",
+    "description": "未確認エリア【フェロモン迷路】で青色の胞子確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "胞子図鑑"
+  },
+  {
+    "category": "カオス究明",
+    "title": "クリクリッ",
+    "description": "未確認エリア【フェロモン迷路】で赤色の胞子確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "胞子図鑑"
+  },
+  {
+    "category": "カオス究明",
+    "title": "ワタワタ",
+    "description": "未確認エリア【フェロモン迷路】で黄色の胞子確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "胞子図鑑"
+  },
+  {
+    "category": "カオス究明",
+    "title": "カラララ",
+    "description": "未確認エリア【フェロモン迷路】で緑色の胞子確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "胞子図鑑"
+  },
+  {
+    "category": "カオス究明",
+    "title": "ピンクゥ",
+    "description": "未確認エリア【フェロモン迷路】でピンク色の胞子確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "胞子図鑑"
+  },
+  {
+    "category": "カオス究明",
+    "title": "今回は何を見た？",
+    "description": "ヒルデと一緒に未確認エリア【フェロモン迷路】でピンク色の胞子確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "興味ぶっかい！",
+    "description": "未確認エリア【フェロモン迷路】でスプレダーに話し方を認めてもらう",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "スプレダーの証言",
+    "description": "未確認エリア【フェロモン迷路】でピオの【インベーダーインタビュー：フェロモンきのこの胞子確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "色と呼べるすべてのもの"
+  },
+  {
+    "category": "カオス究明",
+    "title": "追い詰めた末の救い",
+    "description": "未確認エリア【捕食者の宴会場】で宇宙海賊を最大限追い詰めて救出する",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "粘液質の構造",
+    "description": "未確認エリア【捕食者の宴会場】でピオの【侵食性燃英気質研究日誌】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "ピオの研・究・全・集！、色と呼べるすべてのもの"
+  },
+  {
+    "category": "カオス究明",
+    "title": "狩猟のメカニズム",
+    "description": "未確認エリア【捕食者の宴会場】でピオの【捕食者の狩猟研究日誌】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "ピオの研・究・全・集！、色と呼べるすべてのもの"
+  },
+  {
+    "category": "カオス究明",
+    "title": "ダリオの漂流",
+    "description": "未確認エリア【密かな洞窟】でアイアンレイン兵【ダリオの漂流記録】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "3人の友の最後の記録、色と呼べるすべてのもの"
+  },
+  {
+    "category": "カオス究明",
+    "title": "ここで見えるものは",
+    "description": "未確認エリア【密かな洞窟】で伝説装備【万華鏡の欠片】獲得",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "目覚めた貪欲",
+    "description": "アラベラと一緒に未確認エリア【密かな洞窟】で目覚めたアヴァリティア確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "眠れる貪欲",
+    "description": "アラベラと一緒に未確認エリア【密かな洞窟】で眠れるアヴァリティア確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "最後まで行く",
+    "description": "未確認エリア【震える沈黙】で最後まで採掘する",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "卵のゆりかご",
+    "description": "未確認エリア【孵化するゆりかご】でカプセル内部のインベーダーの卵確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "カプセルの主"
+  },
+  {
+    "category": "カオス究明",
+    "title": "青虫のゆりかご",
+    "description": "未確認エリア【孵化するゆりかご】でカプセル内部のインベーダーの青虫確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "カプセルの主"
+  },
+  {
+    "category": "カオス究明",
+    "title": "最後の日誌",
+    "description": "希少装備【最後の日誌】獲得",
+    "reward": "",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "ミロの日誌",
+    "description": "未確認エリア【孵化するゆりかご】でアイアンレイン兵【ミロの最後の日誌】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "3人の友の最後の記録、色と呼べるすべてのもの"
+  },
+  {
+    "category": "カオス究明",
+    "title": "抜け殻の価値",
+    "description": "未確認エリア【脱皮の墓地】でピオの【インベーダー抜け殻研究日誌】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "ピオの研・究・全・集！、色と呼べるすべてのもの"
+  },
+  {
+    "category": "カオス究明",
+    "title": "あなたのくさび",
+    "description": "伝説装備【永遠のくさび】獲得",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "最後の定量",
+    "description": "未確認エリア【名ばかりの安息所】で感染したダークスターへの投薬に成功",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "捏造された命令",
+    "description": "未確認エリア【理性の残滓】ですべえてのチームに偽の命令を伝える",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "狂気じみた執着",
+    "description": "未確認エリア【理性の残滓】で交渉の末に脅迫する",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "インベーダー観察記録",
+    "description": "伝説装備【インベーダー観察記録】獲得",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "同じ拍子で",
+    "description": "未確認エリア【深淵の顎】で群れの鼓動と心拍の一致に成功",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "深淵の贈り物",
+    "description": "未確認エリア【深淵の顎】で穴の中を確認する",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "模倣体のこだま",
+    "description": "伝説カード【模倣体のこだま】獲得",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "殻との取り引き",
+    "description": "未確認エリア【死者の腹話術】で殻の巣と取り引きする",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "まだ不正解",
+    "description": "未確認エリア【間違いノート】でピオの記録確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "ピオの研・究・全・集！、色と呼べるすべてのもの"
+  },
+  {
+    "category": "カオス究明",
+    "title": "ザ'カラブ",
+    "description": "未確認エリア【間違いノート】でピオにメモを見せてほしいと言う",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "ピオの研・究・全・集！、色と呼べるすべてのもの"
+  },
+  {
+    "category": "カオス究明",
+    "title": "研究結果",
+    "description": "未確認エリア【間違いノート】でピオの発表を最後まで聞く",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "合一の瞬間",
+    "description": "未確認エリア【間違いノート】でピオの正体を尋ねる",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "どうして、こんな姿に",
+    "description": "ヒルデと一緒に未確認エリア【間違いノート】確認",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "消化された採掘機",
+    "description": "伝説装備【歪んだドリル刃】獲得",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "消化された通信装備",
+    "description": "伝説装備【閉鎖回路端子】獲得",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "消化された戦闘ドローン",
+    "description": "伝説装備【汚染されたドローンレンズ】獲得",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "欲望が届く場所",
+    "description": "未確認エリア【貪欲が導く場所】でアヴァリティアの破片をすべて削り取る",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "欲望の果ては",
+    "description": "未確認エリア【貪欲が導く場所】で最も深い罠へ入る",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "伸ばした手",
+    "description": "未確認エリア【ファーストの墓碑銘】で琥珀石の中を調べる",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": "色と呼べるすべてのもの"
+  },
+  {
+    "category": "カオス究明",
+    "title": "欲しいものの重さ",
+    "description": "未確認エリア【ファーストの墓碑銘】で琥珀石を通じて欲しいものを獲得",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "彼女の痕跡",
+    "description": "アラベラと一緒に未確認エリア【ファーストの墓碑銘】で琥珀石の中を調べる",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "継承の残痕",
+    "description": "固有装備【継承の残痕】獲得",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "循環の輪",
+    "description": "伝説装備【循環の輪】獲得",
+    "reward": "恍惚の結晶石×200",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "30回の孵化",
+    "description": "カオス-【万華鏡の孵化場】30回クリア",
+    "reward": "恍惚の結晶石×2000",
+    "progress": "",
+    "parent": "完全なる脱皮"
+  },
+  {
+    "category": "カオス究明",
+    "title": "色と呼べるすべてのもの",
+    "description": "カオス-【万華鏡の孵化場】のすべての情報型選択肢、相互作用選択肢を確認",
+    "reward": "パグナ侵略者",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "光が届かない場所",
+    "description": "カオス-【万華鏡の孵化場】のすべての未確認エリア90%達成",
+    "reward": "未知の生態系",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "完全なる脱皮",
+    "description": "【万華鏡の孵化場】クリア挑戦課題すべて達成",
+    "reward": "輝かしい羽化",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "アップデート予定です。",
+    "description": "",
+    "reward": "",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "アップデート予定です。",
+    "description": "",
+    "reward": "",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "カオス究明",
+    "title": "アップデート予定です。",
+    "description": "",
+    "reward": "",
+    "progress": "",
+    "parent": "完全なる脱皮"
+  },
+  {
+    "category": "戦闘報告",
+    "title": "すべての色の収集家",
+    "description": "すべての欲望カード獲得",
+    "reward": "万象のプリズム",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "戦闘報告",
+    "title": "渇望の証明",
+    "description": "すべての欲望シナジー有効化実績達成",
+    "reward": "凝縮された世界",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "戦闘報告",
+    "title": "欲望：探求の発現",
+    "description": "【万華鏡の孵化場】で探求シナジー7以上有効化",
+    "reward": "恍惚の結晶石×500",
+    "progress": "",
+    "parent": "渇望の証明"
+  },
+  {
+    "category": "戦闘報告",
+    "title": "欲望：統制の発現",
+    "description": "【万華鏡の孵化場】で統制シナジー7以上有効化",
+    "reward": "恍惚の結晶石×500",
+    "progress": "",
+    "parent": "渇望の証明"
+  },
+  {
+    "category": "戦闘報告",
+    "title": "欲望：所有の発現",
+    "description": "【万華鏡の孵化場】で所有シナジー7以上有効化",
+    "reward": "恍惚の結晶石×500",
+    "progress": "",
+    "parent": "渇望の証明"
+  },
+  {
+    "category": "戦闘報告",
+    "title": "欲望：生存の発現",
+    "description": "【万華鏡の孵化場】で生存シナジー3以上有効化",
+    "reward": "恍惚の結晶石×500",
+    "progress": "",
+    "parent": "渇望の証明"
+  },
+  {
+    "category": "戦闘報告",
+    "title": "光が砕けた場所",
+    "description": "【砕けた光と爪】シーズンのすべてのボスモンスターを特定条件を満たした状態で撃破",
+    "reward": "完璧な剥製",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "戦闘報告",
+    "title": "最初の亀裂",
+    "description": "星雲の歪み-【ベルキュラ】難易度4歪み重複9以上で、欲望シナジー3以上を1個以上有効化した状態で戦闘完了",
+    "reward": "恍惚の結晶石×1000",
+    "progress": "",
+    "parent": "光が砕けた場所"
+  },
+  {
+    "category": "戦闘報告",
+    "title": "広がる渇望",
+    "description": "星雲の歪み-【フォルミカ】難易度4歪み重複9以上で、欲望シナジー3以上を2個以上有効化した状態で戦闘完了",
+    "reward": "恍惚の結晶石×1000",
+    "progress": "",
+    "parent": "光が砕けた場所"
+  },
+  {
+    "category": "戦闘報告",
+    "title": "欲望の顕現",
+    "description": "星雲の歪み-【放浪者フォルミカ】難易度4歪み重複9以上で、欲望の発現カードを1回以上使用して戦闘完了",
+    "reward": "恍惚の結晶石×1000",
+    "progress": "",
+    "parent": "光が砕けた場所"
+  },
+  {
+    "category": "戦闘報告",
+    "title": "隠された欲望",
+    "description": "カオス-【万華鏡の孵化場】中心部でアヴァルクと戦闘中、アヴァリティアを12体以上撃破した後に完了",
+    "reward": "恍惚の結晶石×1000",
+    "progress": "",
+    "parent": "光が砕けた場所"
+  },
+  {
+    "category": "戦闘報告",
+    "title": "砕けたものたちの記録",
+    "description": "【砕けた光と爪】シーズンのすべてのモンスター撃破",
+    "reward": "適者の証明",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "戦闘報告",
+    "title": "増幅する屈折",
+    "description": "カオス-【万華鏡の孵化場】のモンスター探査度90%達成",
+    "reward": "恍惚の結晶石×2000",
+    "progress": "",
+    "parent": "砕けたものたちの記録"
+  },
+  {
+    "category": "戦闘報告",
+    "title": "万華鏡の向こう",
+    "description": "カオス【万華鏡の孵化場】中心部でアヴァルク撃破",
+    "reward": "恍惚の結晶石×2000",
+    "progress": "",
+    "parent": "砕けたものたちの記録"
+  },
+  {
+    "category": "戦闘報告",
+    "title": "アップデート予定です。",
+    "description": "",
+    "reward": "",
+    "progress": "",
+    "parent": "光が砕けた場所"
+  },
+  {
+    "category": "戦闘報告",
+    "title": "アップデート予定です。",
+    "description": "",
+    "reward": "",
+    "progress": "",
+    "parent": "砕けたものたちの記録"
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【ベルキュラ】撃破",
+    "description": "",
+    "reward": "恍惚の結晶石×200、クリスタル×20",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【ベルキュラ】歪みの重複1以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×100、クリスタル×10",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【ベルキュラ】歪みの重複2以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×100、クリスタル×10",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【ベルキュラ】歪みの重複3以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×100、クリスタル×10",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【ベルキュラ】歪みの重複4以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×100、クリスタル×10",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【ベルキュラ】歪みの重複5以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×100、クリスタル×10",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【ベルキュラ】歪みの重複6以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×100、クリスタル×10",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【ベルキュラ】歪みの重複7以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×50、記憶の粒子×20",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【ベルキュラ】歪みの重複8以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×50、記憶の粒子×20",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【ベルキュラ】歪みの重複9以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×50、記憶の粒子×20",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【フォルミカ】撃破",
+    "description": "",
+    "reward": "恍惚の結晶石×200、クリスタル×20",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【フォルミカ】歪みの重複1以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×100、クリスタル×10",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【フォルミカ】歪みの重複2以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×100、クリスタル×10",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【フォルミカ】歪みの重複3以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×100、クリスタル×10",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【フォルミカ】歪みの重複4以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×100、クリスタル×10",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【フォルミカ】歪みの重複5以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×100、クリスタル×10",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【フォルミカ】歪みの重複6以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×100、クリスタル×10",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【フォルミカ】歪みの重複7以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×50、記憶の粒子×20",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【フォルミカ】歪みの重複8以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×50、記憶の粒子×20",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【フォルミカ】歪みの重複9以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×50、記憶の粒子×20",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【放浪者フォルミカ】撃破",
+    "description": "",
+    "reward": "恍惚の結晶石×200、クリスタル×20",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【放浪者フォルミカ】歪みの重複1以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×100、クリスタル×10",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【放浪者フォルミカ】歪みの重複2以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×100、クリスタル×10",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【放浪者フォルミカ】歪みの重複3以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×100、クリスタル×10",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【放浪者フォルミカ】歪みの重複4以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×100、クリスタル×10",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【放浪者フォルミカ】歪みの重複5以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×100、クリスタル×10",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【放浪者フォルミカ】歪みの重複6以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×100、クリスタル×10",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【放浪者フォルミカ】歪みの重複7以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×50、記憶の粒子×20",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【放浪者フォルミカ】歪みの重複8以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×50、記憶の粒子×20",
+    "progress": "",
+    "parent": ""
+  },
+  {
+    "category": "壊滅作戦",
+    "title": "星雲の歪み-【放浪者フォルミカ】歪みの重複9以上でクリア",
+    "description": "",
+    "reward": "恍惚の結晶石×50、記憶の粒子×20",
+    "progress": "",
+    "parent": ""
+  }
+]

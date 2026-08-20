@@ -13,6 +13,13 @@ vi.mock("next-intl", () => ({
   },
 }));
 
+// A separate mock factory that adds t.has to cover the resolveText t.has branch
+const mockTranslationsWithHas = () => {
+  const t = (key: string) => (key === EMPTY_DESC_KEY ? "" : key);
+  t.has = (key: string) => key !== "unknown.key";
+  return t;
+};
+
 vi.mock("next/image", () => ({
   default: ({ alt }: { alt: string }) => <img alt={alt} />,
 }));
@@ -307,6 +314,25 @@ describe("ChallengeTaskList — reward image", () => {
   });
 });
 
+describe("ChallengeTaskList — resolveText edge cases", () => {
+  test("renders nothing for a task with empty titleKey", () => {
+    const task = baseTask({ titleKey: "" });
+
+    render(<ChallengeTaskList tasks={[task]} {...defaultProps} />);
+
+    // Empty titleKey should not render any visible text for the title
+    expect(screen.queryByRole("checkbox", { name: /\S/ })).toBeNull();
+  });
+
+  test("renders raw text when titleKey starts with 'raw:'", () => {
+    const task = baseTask({ titleKey: "raw:直接テキスト" });
+
+    render(<ChallengeTaskList tasks={[task]} {...defaultProps} />);
+
+    expect(screen.getByRole("checkbox", { name: "直接テキスト" })).toBeTruthy();
+  });
+});
+
 describe("ChallengeTaskList — child task indentation", () => {
   test("applies pl-5 class to child task content wrapper", () => {
     render(
@@ -562,22 +588,53 @@ describe("ChallengeTaskList — child task popup", () => {
     expect(completedLabel?.className).not.toContain("text-zinc-400");
   });
 
-  test("popup closes when info icon is clicked again", () => {
+  test("popup opens and shows empty list when derived task has no childIds", () => {
     render(
       <ChallengeTaskList
-        tasks={[derivedTask, childTask1, childTask2]}
+        tasks={[derivedTaskNoChildren]}
         achievedTaskIds={new Set()}
         checkedTaskIds={[]}
         onToggleTask={vi.fn()}
       />,
     );
 
-    const btn = screen.getByRole("button", { name: "tasks.childList.open" });
-    fireEvent.click(btn);
-    expect(screen.getByRole("dialog")).toBeTruthy();
+    fireEvent.click(screen.getByRole("button", { name: "tasks.childList.open" }));
 
-    fireEvent.click(btn);
-    expect(screen.queryByRole("dialog")).toBeNull();
+    const dialog = screen.getByRole("dialog");
+    expect(dialog.querySelector("li")).toBeNull();
+  });
+
+  test("popup shows child id as fallback when child task is not in the list", () => {
+    // derivedTask has childIds ["child-1", "child-2"] but only child-1 is in tasks
+    render(
+      <ChallengeTaskList
+        tasks={[derivedTask, childTask1]}
+        achievedTaskIds={new Set()}
+        checkedTaskIds={[]}
+        onToggleTask={vi.fn()}
+      />,
+    );
+
+    fireEvent.click(screen.getByRole("button", { name: "tasks.childList.open" }));
+
+    // child-2 is not in tasks, so its id should appear as the fallback label
+    expect(screen.getByRole("dialog").textContent).toContain("child-2");
+  });
+
+  test("achieved unknown child id uses id as aria-label fallback", () => {
+    render(
+      <ChallengeTaskList
+        tasks={[derivedTask, childTask1]}
+        achievedTaskIds={new Set(["child-2"])}
+        checkedTaskIds={[]}
+        onToggleTask={vi.fn()}
+      />,
+    );
+
+    fireEvent.click(screen.getByRole("button", { name: "tasks.childList.open" }));
+
+    // child-2 is achieved but not in tasks; aria-label should fall back to "child-2"
+    expect(screen.getByLabelText("child-2")).toBeTruthy();
   });
 });
 

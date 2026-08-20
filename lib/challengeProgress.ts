@@ -7,6 +7,10 @@ import {
 
 export const LOCAL_STORAGE_KEY = "chaos-zero-nightmare-checked-task-ids";
 export const WEEKLY_RESET_KEY = "chaos-zero-nightmare-week-start";
+export const getSeasonCheckedStorageKey = (seasonId: string): string =>
+  `${LOCAL_STORAGE_KEY}:${seasonId}`;
+export const getSeasonWeeklyResetKey = (seasonId: string): string =>
+  `${WEEKLY_RESET_KEY}:${seasonId}`;
 
 /**
  * Returns the timestamp (ms) of the most recent Monday 03:00 in local time.

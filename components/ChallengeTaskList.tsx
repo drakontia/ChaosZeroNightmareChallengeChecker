@@ -20,6 +20,11 @@ export function ChallengeTaskList({
   onToggleTask,
 }: ChallengeTaskListProps) {
   const t = useTranslations();
+  const resolveText = (value: string) => {
+    if (!value) return "";
+    if (value.startsWith("raw:")) return value.slice(4);
+    return t(value);
+  };
   const [openPopupTaskId, setOpenPopupTaskId] = useState<string | null>(null);
 
   const taskById = useMemo(() => {
@@ -45,6 +50,8 @@ export function ChallengeTaskList({
           const manuallyChecked = checkedTaskIds.includes(task.id);
           const isDerived = task.status === "derived";
           const isPopupOpen = openPopupTaskId === task.id;
+          const titleText = resolveText(task.titleKey);
+          const descriptionText = resolveText(task.descriptionKey);
 
           return (
             <li
@@ -58,13 +65,13 @@ export function ChallengeTaskList({
                 className="h-5 w-5 cursor-pointer rounded border-zinc-300 text-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600"
                 checked={achieved}
                 onChange={() => onToggleTask(task)}
-                aria-label={t(task.titleKey)}
+                aria-label={titleText}
                 disabled={isDerived}
               />
 
               <div className={task.isChild ? "pl-5" : ""}>
-                <p className="text-base font-semibold text-zinc-900">{t(task.titleKey)}</p>
-                {t(task.descriptionKey) && <p className="text-sm text-zinc-600">{t(task.descriptionKey)}</p>}
+                <p className="text-base font-semibold text-zinc-900">{titleText}</p>
+                {descriptionText && <p className="text-sm text-zinc-600">{descriptionText}</p>}
               </div>
 
               <div className="relative flex items-center">
@@ -91,13 +98,13 @@ export function ChallengeTaskList({
                               <li
                                 key={childId}
                                 className="flex items-center gap-2"
-                                aria-label={child ? `${t(child.titleKey)}${childAchieved ? ` ${t("tasks.childList.completed")}` : ""}` : childId}
+                                aria-label={child ? `${resolveText(child.titleKey)}${childAchieved ? ` ${t("tasks.childList.completed")}` : ""}` : childId}
                               >
                                 <span className="flex h-4 w-4 shrink-0 items-center justify-center">
                                   {childAchieved && <Check size={14} className="text-emerald-600" />}
                                 </span>
                                 <span className={`flex-1 text-sm ${childAchieved ? "text-zinc-400" : "text-zinc-700"}`}>
-                                  {child ? t(child.titleKey) : childId}
+                                  {child ? resolveText(child.titleKey) : childId}
                                 </span>
                                 <span className={`text-xs ${childAchieved ? "text-zinc-400" : "text-zinc-700"}`}>{t("tasks.childList.completed")}</span>
                               </li>
@@ -113,7 +120,7 @@ export function ChallengeTaskList({
               <div className="flex justify-center gap-1">
                 {task.rewards?.map((reward) => (
                   <div key={reward.altKey} className="relative">
-                    <Image src={reward.image} alt={t(reward.altKey)} width={56} height={56} />
+                    <Image src={reward.image} alt={resolveText(reward.altKey)} width={56} height={56} />
                     {reward.amount !== undefined && (
                       <span className="absolute bottom-0 right-0 rounded bg-black/60 px-0.5 text-[10px] font-bold leading-tight text-white">
                         {reward.amount.toLocaleString()}

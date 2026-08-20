@@ -30,6 +30,21 @@ describe("challengeProgress", () => {
       expect(achieved.has("ws-2000")).toBe(true);
       expect(achieved.has("ws-3000")).toBe(false);
     });
+
+    test("does not derive parent when a child id references a non-existent task", () => {
+      // Parent references a childId that doesn't exist in the tasks list
+      const ghostParent: import("@/types").ChallengeTask = {
+        id: "ghost-parent",
+        status: "derived",
+        titleKey: "t",
+        descriptionKey: "d",
+        childIds: ["ghost-child"],
+      };
+      const achieved = getAchievedTaskIds([ghostParent], ["ghost-child"]);
+
+      // ghost-child is checked but doesn't appear as a task, so childTask is undefined → parent not derived
+      expect(achieved.has("ghost-parent")).toBe(false);
+    });
   });
 
   describe("getTabCompletion", () => {
@@ -65,6 +80,12 @@ describe("challengeProgress", () => {
       const completion = getTabCompletion(categories, achieved, "weekly-score");
 
       expect(completion).toEqual({ completed: WEEKLY_TOTAL, total: WEEKLY_TOTAL, rate: 100 });
+    });
+
+    test("returns {completed:0, total:0, rate:0} when category has no tasks", () => {
+      const completion = getTabCompletion([], new Set(), "weekly-score");
+
+      expect(completion).toEqual({ completed: 0, total: 0, rate: 0 });
     });
 
     test("annihilation tab: rate rises when tasks are checked", () => {

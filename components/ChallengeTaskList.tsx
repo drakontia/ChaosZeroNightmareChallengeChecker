@@ -23,7 +23,6 @@ export function ChallengeTaskList({
   const resolveText = (value: string) => {
     if (!value) return "";
     if (value.startsWith("raw:")) return value.slice(4);
-    if (typeof t.has === "function" && !t.has(value)) return value;
     return t(value);
   };
   const [openPopupTaskId, setOpenPopupTaskId] = useState<string | null>(null);

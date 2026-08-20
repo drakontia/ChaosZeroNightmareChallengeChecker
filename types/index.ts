@@ -43,7 +43,27 @@ export type RewardKey =
   | "edinity_profile"
   | "edinity"
   | "phantom_theater_profile"
-  | "phantom_theater";
+  | "phantom_theater"
+  // season 4
+  | "ecstatic_crystal"
+  | "hildes_bow"
+  | "unis_gatling_gun"
+  | "shattered_light_hilde"
+  | "cute_snake_ornament"
+  | "black_panther_ears"
+  | "shattered_light_arabella"
+  | "prism_lens"
+  | "desire_guidepost"
+  | "greed_without_price"
+  | "shattered_light_and_claw"
+  | "abyssal_survivor"
+  | "pagna_invader"
+  | "unknown_ecosystem"
+  | "glorious_metamorphosis"
+  | "prism_of_all_things"
+  | "condensed_world"
+  | "perfect_taxidermy"
+  | "proof_of_the_fittest";
 
 export interface Reward {
   image: string;

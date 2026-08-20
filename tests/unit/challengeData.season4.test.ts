@@ -22,4 +22,20 @@ describe("season 4 data onboarding", () => {
     expect(byCategory["battle-report"]).toBe(16);
     expect(byCategory.annihilation).toBe(30);
   });
+
+  test("all season-4 task keys follow i18n format (no raw: prefix)", () => {
+    const season4 = seasons.find((season) => season.id === "season-4");
+    const allTasks = season4?.categories.flatMap((c) => c.tasks) ?? [];
+
+    const rawTitleKeys = allTasks.filter((t) => t.titleKey.startsWith("raw:")).map((t) => t.titleKey);
+    const rawDescKeys = allTasks.filter((t) => t.descriptionKey.startsWith("raw:")).map((t) => t.descriptionKey);
+    const rawAltKeys = allTasks
+      .flatMap((t) => t.rewards ?? [])
+      .filter((r) => r.altKey.startsWith("raw:"))
+      .map((r) => r.altKey);
+
+    expect(rawTitleKeys, "titleKey must not use raw: prefix").toHaveLength(0);
+    expect(rawDescKeys, "descriptionKey must not use raw: prefix").toHaveLength(0);
+    expect(rawAltKeys, "reward altKey must not use raw: prefix").toHaveLength(0);
+  });
 });

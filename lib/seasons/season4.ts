@@ -613,42 +613,6 @@ export const season4: Season =
           progressMax: 1,
         },
         {
-          id: "s4-ml-53",
-          status: "manual",
-          titleKey: "tasks.s4ML53.title",
-          descriptionKey: "tasks.s4ML53.description",
-        },
-        {
-          id: "s4-ml-54",
-          status: "manual",
-          titleKey: "tasks.s4ML54.title",
-          descriptionKey: "tasks.s4ML54.description",
-        },
-        {
-          id: "s4-ml-55",
-          status: "manual",
-          titleKey: "tasks.s4ML55.title",
-          descriptionKey: "tasks.s4ML55.description",
-        },
-        {
-          id: "s4-ml-56",
-          status: "manual",
-          titleKey: "tasks.s4ML56.title",
-          descriptionKey: "tasks.s4ML56.description",
-        },
-        {
-          id: "s4-ml-57",
-          status: "manual",
-          titleKey: "tasks.s4ML57.title",
-          descriptionKey: "tasks.s4ML57.description",
-        },
-        {
-          id: "s4-ml-58",
-          status: "manual",
-          titleKey: "tasks.s4ML58.title",
-          descriptionKey: "tasks.s4ML58.description",
-        },
-        {
           id: "s4-ml-59",
           status: "manual",
           titleKey: "tasks.s4ML59.title",

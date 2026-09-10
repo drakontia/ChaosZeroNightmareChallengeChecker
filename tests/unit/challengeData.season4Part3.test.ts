@@ -1,5 +1,6 @@
 import { describe, expect, test } from "vitest";
 import { seasons } from "@/lib/challengeData";
+import jaMessages from "@/messages/ja/common.json";
 
 describe("season 4 part 3 (issue #51) task additions", () => {
   const season4 = seasons.find((s) => s.id === "season-4");
@@ -60,43 +61,52 @@ describe("season 4 part 3 (issue #51) task additions", () => {
     expect(byId.get("s4-ml-65")?.rewards?.[0]?.amount).toBe(200);
   });
 
-  test("adds the 2 new non-child chaos-analysis tasks", () => {
+  test("replaces the 2 placeholder chaos-analysis tasks with real content", () => {
     const chaosAnalysis = categories.find((c) => c.id === "chaos-analysis");
     const chaosIds = new Set((chaosAnalysis?.tasks ?? []).map((t) => t.id));
 
-    expect(chaosIds.has("s4-ca-70")).toBe(true);
-    expect(chaosIds.has("s4-ca-71")).toBe(true);
-    expect(byId.get("s4-ca-70")?.rewards?.[0]?.amount).toBe(200);
-    expect(byId.get("s4-ca-71")?.rewards?.[0]?.amount).toBe(200);
+    expect(chaosIds.has("s4-ca-67")).toBe(true);
+    expect(chaosIds.has("s4-ca-68")).toBe(true);
+    expect(byId.get("s4-ca-67")?.rewards?.[0]?.amount).toBe(200);
+    expect(byId.get("s4-ca-68")?.rewards?.[0]?.amount).toBe(200);
   });
 
-  test("wires the new chaos-analysis child into its derived parent", () => {
-    expect(byId.get("s4-ca-72")?.isChild).toBe(true);
-    expect(byId.get("s4-ca-66")?.childIds).toContain("s4-ca-72");
-    expect(byId.get("s4-ca-72")?.rewards?.[0]?.amount).toBe(2000);
+  test("replaces the placeholder chaos-analysis child of the derived parent", () => {
+    expect(byId.get("s4-ca-69")?.isChild).toBe(true);
+    expect(byId.get("s4-ca-66")?.childIds).toContain("s4-ca-69");
+    expect(byId.get("s4-ca-69")?.rewards?.[0]?.amount).toBe(2000);
   });
 
-  test("wires the new battle-report children into their derived parents", () => {
-    expect(byId.get("s4-br-17")?.isChild).toBe(true);
-    expect(byId.get("s4-br-18")?.isChild).toBe(true);
+  test("replaces the placeholder battle-report children of the derived parents", () => {
+    expect(byId.get("s4-br-15")?.isChild).toBe(true);
+    expect(byId.get("s4-br-16")?.isChild).toBe(true);
 
-    expect(byId.get("s4-br-7")?.childIds).toContain("s4-br-17");
-    expect(byId.get("s4-br-12")?.childIds).toContain("s4-br-18");
+    expect(byId.get("s4-br-7")?.childIds).toContain("s4-br-15");
+    expect(byId.get("s4-br-12")?.childIds).toContain("s4-br-16");
 
-    expect(byId.get("s4-br-17")?.rewards?.map((r) => r.altKey)).toEqual([
+    expect(byId.get("s4-br-15")?.rewards?.map((r) => r.altKey)).toEqual([
       "rewards.season4.petit_anes",
     ]);
-    expect(byId.get("s4-br-18")?.rewards?.map((r) => r.altKey)).toEqual([
+    expect(byId.get("s4-br-16")?.rewards?.map((r) => r.altKey)).toEqual([
       "rewards.season4.id_card_kaleidoscope_hatchery",
       "rewards.season4.save_data_kaleidoscope_hatchery",
     ]);
   });
 
+  test("no remaining 'アップデート予定' placeholder text on the replaced tasks", () => {
+    const tasksMessages = jaMessages.tasks as Record<string, { title: string; description: string }>;
+    const replacedKeys = ["s4CA67", "s4CA68", "s4CA69", "s4BR15", "s4BR16"];
+
+    for (const key of replacedKeys) {
+      expect(tasksMessages[key]?.title).not.toContain("アップデート予定");
+    }
+  });
+
   test("no titleKey/descriptionKey/altKey uses the raw: prefix", () => {
     const newIds = [
       "s4-ml-59", "s4-ml-60", "s4-ml-61", "s4-ml-62", "s4-ml-63", "s4-ml-64", "s4-ml-65",
-      "s4-ca-70", "s4-ca-71", "s4-ca-72",
-      "s4-br-17", "s4-br-18",
+      "s4-ca-67", "s4-ca-68", "s4-ca-69",
+      "s4-br-15", "s4-br-16",
     ];
 
     for (const id of newIds) {

@@ -1353,50 +1353,31 @@ export const season4: Season =
           rewards: [
             rewardOf("glorious_metamorphosis"),
           ],
-          childIds: ["s4-ca-63", "s4-ca-69", "s4-ca-72"],
+          childIds: ["s4-ca-63", "s4-ca-69"],
         },
         {
           id: "s4-ca-67",
           status: "manual",
           titleKey: "tasks.s4CA67.title",
           descriptionKey: "tasks.s4CA67.description",
+          rewards: [
+            rewardOf("ecstatic_crystal", 200),
+          ],
         },
         {
           id: "s4-ca-68",
           status: "manual",
           titleKey: "tasks.s4CA68.title",
           descriptionKey: "tasks.s4CA68.description",
+          rewards: [
+            rewardOf("ecstatic_crystal", 200),
+          ],
         },
         {
           id: "s4-ca-69",
           status: "manual",
           titleKey: "tasks.s4CA69.title",
           descriptionKey: "tasks.s4CA69.description",
-          isChild: true,
-        },
-        {
-          id: "s4-ca-70",
-          status: "manual",
-          titleKey: "tasks.s4CA70.title",
-          descriptionKey: "tasks.s4CA70.description",
-          rewards: [
-            rewardOf("ecstatic_crystal", 200),
-          ],
-        },
-        {
-          id: "s4-ca-71",
-          status: "manual",
-          titleKey: "tasks.s4CA71.title",
-          descriptionKey: "tasks.s4CA71.description",
-          rewards: [
-            rewardOf("ecstatic_crystal", 200),
-          ],
-        },
-        {
-          id: "s4-ca-72",
-          status: "manual",
-          titleKey: "tasks.s4CA72.title",
-          descriptionKey: "tasks.s4CA72.description",
           rewards: [
             rewardOf("ecstatic_crystal", 2000),
           ],
@@ -1476,7 +1457,7 @@ export const season4: Season =
           rewards: [
             rewardOf("perfect_taxidermy"),
           ],
-          childIds: ["s4-br-8", "s4-br-9", "s4-br-10", "s4-br-11", "s4-br-15", "s4-br-17"],
+          childIds: ["s4-br-8", "s4-br-9", "s4-br-10", "s4-br-11", "s4-br-15"],
         },
         {
           id: "s4-br-8",
@@ -1526,7 +1507,7 @@ export const season4: Season =
           rewards: [
             rewardOf("proof_of_the_fittest"),
           ],
-          childIds: ["s4-br-13", "s4-br-14", "s4-br-16", "s4-br-18"],
+          childIds: ["s4-br-13", "s4-br-14", "s4-br-16"],
         },
         {
           id: "s4-br-13",
@@ -1553,6 +1534,9 @@ export const season4: Season =
           status: "manual",
           titleKey: "tasks.s4BR15.title",
           descriptionKey: "tasks.s4BR15.description",
+          rewards: [
+            rewardOf("petit_anes"),
+          ],
           isChild: true,
         },
         {
@@ -1560,23 +1544,6 @@ export const season4: Season =
           status: "manual",
           titleKey: "tasks.s4BR16.title",
           descriptionKey: "tasks.s4BR16.description",
-          isChild: true,
-        },
-        {
-          id: "s4-br-17",
-          status: "manual",
-          titleKey: "tasks.s4BR17.title",
-          descriptionKey: "tasks.s4BR17.description",
-          rewards: [
-            rewardOf("petit_anes"),
-          ],
-          isChild: true,
-        },
-        {
-          id: "s4-br-18",
-          status: "manual",
-          titleKey: "tasks.s4BR18.title",
-          descriptionKey: "tasks.s4BR18.description",
           rewards: [
             rewardOf("id_card_kaleidoscope_hatchery"),
             rewardOf("save_data_kaleidoscope_hatchery"),

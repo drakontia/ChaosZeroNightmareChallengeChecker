@@ -63,7 +63,16 @@ export type RewardKey =
   | "prism_of_all_things"
   | "condensed_world"
   | "perfect_taxidermy"
-  | "proof_of_the_fittest";
+  | "proof_of_the_fittest"
+  | "greed_scythe"
+  | "shattered_light_olga"
+  | "emilys_sword"
+  | "shattered_light_anes"
+  | "id_card_pagna"
+  | "save_data_pagna"
+  | "petit_anes"
+  | "id_card_kaleidoscope_hatchery"
+  | "save_data_kaleidoscope_hatchery";
 
 export interface Reward {
   image: string;

@@ -406,7 +406,7 @@ export const season4: Season =
           rewards: [
             rewardOf("prism_lens", 2),
           ],
-          childIds: ["s4-ml-33", "s4-ml-34", "s4-ml-35", "s4-ml-36", "s4-ml-37", "s4-ml-38", "s4-ml-39", "s4-ml-40", "s4-ml-41", "s4-ml-42", "s4-ml-43", "s4-ml-44", "s4-ml-45", "s4-ml-46", "s4-ml-47", "s4-ml-65"],
+          childIds: ["s4-ml-33", "s4-ml-34", "s4-ml-35", "s4-ml-36", "s4-ml-37", "s4-ml-38", "s4-ml-39", "s4-ml-40", "s4-ml-41", "s4-ml-42", "s4-ml-43", "s4-ml-44", "s4-ml-45", "s4-ml-46", "s4-ml-47"],
         },
         {
           id: "s4-ml-33",
@@ -566,7 +566,7 @@ export const season4: Season =
           rewards: [
             rewardOf("desire_guidepost"),
           ],
-          childIds: ["s4-ml-17", "s4-ml-18", "s4-ml-19", "s4-ml-20", "s4-ml-21", "s4-ml-22", "s4-ml-23", "s4-ml-24", "s4-ml-25", "s4-ml-26", "s4-ml-27", "s4-ml-28", "s4-ml-29", "s4-ml-30", "s4-ml-31", "s4-ml-64"],
+          childIds: ["s4-ml-17", "s4-ml-18", "s4-ml-19", "s4-ml-20", "s4-ml-21", "s4-ml-22", "s4-ml-23", "s4-ml-24", "s4-ml-25", "s4-ml-26", "s4-ml-27", "s4-ml-28", "s4-ml-29", "s4-ml-30", "s4-ml-31"],
         },
         {
           id: "s4-ml-49",
@@ -702,26 +702,6 @@ export const season4: Season =
             rewardOf("save_data_pagna"),
           ],
           progressMax: 1,
-        },
-        {
-          id: "s4-ml-64",
-          status: "manual",
-          titleKey: "tasks.s4ML64.title",
-          descriptionKey: "tasks.s4ML64.description",
-          rewards: [
-            rewardOf("ecstatic_crystal", 200),
-          ],
-          isChild: true,
-        },
-        {
-          id: "s4-ml-65",
-          status: "manual",
-          titleKey: "tasks.s4ML65.title",
-          descriptionKey: "tasks.s4ML65.description",
-          rewards: [
-            rewardOf("ecstatic_crystal", 200),
-          ],
-          isChild: true,
         },
       ],
     },

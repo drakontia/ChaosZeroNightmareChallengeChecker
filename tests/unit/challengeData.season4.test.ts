@@ -17,7 +17,7 @@ describe("season 4 data onboarding", () => {
     );
 
     expect(byCategory["weekly-score"]).toBe(5);
-    expect(byCategory["mission-log"]).toBe(65);
+    expect(byCategory["mission-log"]).toBe(63);
     expect(byCategory["chaos-analysis"]).toBe(69);
     expect(byCategory["battle-report"]).toBe(16);
     expect(byCategory.annihilation).toBe(30);

@@ -47,18 +47,18 @@ describe("season 4 part 3 (issue #51) task additions", () => {
     ]);
   });
 
-  test("wires the new mission-log children into their existing derived parents", () => {
-    expect(byId.get("s4-ml-64")?.isChild).toBe(true);
-    expect(byId.get("s4-ml-65")?.isChild).toBe(true);
+  test("replaces the placeholder mission-log children of their existing derived parents", () => {
+    expect(byId.get("s4-ml-31")?.isChild).toBe(true);
+    expect(byId.get("s4-ml-47")?.isChild).toBe(true);
 
-    expect(byId.get("s4-ml-48")?.childIds).toContain("s4-ml-64");
-    expect(byId.get("s4-ml-32")?.childIds).toContain("s4-ml-65");
+    expect(byId.get("s4-ml-48")?.childIds).toContain("s4-ml-31");
+    expect(byId.get("s4-ml-32")?.childIds).toContain("s4-ml-47");
 
-    expect(byId.get("s4-ml-64")?.rewards?.map((r) => r.altKey)).toEqual([
+    expect(byId.get("s4-ml-31")?.rewards?.map((r) => r.altKey)).toEqual([
       "rewards.season4.ecstatic_crystal",
     ]);
-    expect(byId.get("s4-ml-64")?.rewards?.[0]?.amount).toBe(200);
-    expect(byId.get("s4-ml-65")?.rewards?.[0]?.amount).toBe(200);
+    expect(byId.get("s4-ml-31")?.rewards?.[0]?.amount).toBe(200);
+    expect(byId.get("s4-ml-47")?.rewards?.[0]?.amount).toBe(200);
   });
 
   test("replaces the 2 placeholder chaos-analysis tasks with real content", () => {
@@ -95,7 +95,7 @@ describe("season 4 part 3 (issue #51) task additions", () => {
 
   test("no remaining 'アップデート予定' placeholder text on the replaced tasks", () => {
     const tasksMessages = jaMessages.tasks as Record<string, { title: string; description: string }>;
-    const replacedKeys = ["s4CA67", "s4CA68", "s4CA69", "s4BR15", "s4BR16"];
+    const replacedKeys = ["s4ML31", "s4ML47", "s4CA67", "s4CA68", "s4CA69", "s4BR15", "s4BR16"];
 
     for (const key of replacedKeys) {
       expect(tasksMessages[key]?.title).not.toContain("アップデート予定");
@@ -104,7 +104,7 @@ describe("season 4 part 3 (issue #51) task additions", () => {
 
   test("no titleKey/descriptionKey/altKey uses the raw: prefix", () => {
     const newIds = [
-      "s4-ml-59", "s4-ml-60", "s4-ml-61", "s4-ml-62", "s4-ml-63", "s4-ml-64", "s4-ml-65",
+      "s4-ml-59", "s4-ml-60", "s4-ml-61", "s4-ml-62", "s4-ml-63", "s4-ml-31", "s4-ml-47",
       "s4-ca-67", "s4-ca-68", "s4-ca-69",
       "s4-br-15", "s4-br-16",
     ];

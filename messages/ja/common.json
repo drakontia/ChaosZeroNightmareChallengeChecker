@@ -762,8 +762,8 @@
       "description": "未確認エリア：屈折した欲望【何もない食卓】確認"
     },
     "s4ML31": {
-      "title": "アップデート予定",
-      "description": "未確認エリア：屈折した欲望【】確認"
+      "title": "完璧な殻",
+      "description": "未確認エリア：屈折した欲望【完璧な殻】確認"
     },
     "s4ML32": {
       "title": "同行の屈折",
@@ -826,8 +826,8 @@
       "description": "アラベラと一緒に未確認エリア：屈折した欲望【何もない食卓】確認"
     },
     "s4ML47": {
-      "title": "アップデート予定",
-      "description": "未確認エリア：屈折した欲望【】確認"
+      "title": "手放せない殻",
+      "description": "オルガと一緒に未確認エリア：屈折した欲望【完璧な殻】確認"
     },
     "s4ML48": {
       "title": "欲望収集家",
@@ -849,29 +849,25 @@
       "title": "砕けた光と爪",
       "description": "【砕けた光と爪】シーズン内すべての銀河勲章挑戦課題達成"
     },
-    "s4ML53": {
-      "title": "アップデート予定",
-      "description": "未確認エリア：屈折した欲望【】確認"
+    "s4ML59": {
+      "title": "招かざる客",
+      "description": "ストーリー-第3章【#03 立ち入り可能エリア】完了"
     },
-    "s4ML54": {
-      "title": "アップデート予定",
-      "description": "未確認エリア：屈折した欲望【】確認"
+    "s4ML60": {
+      "title": "密やかな部屋",
+      "description": "ストーリー-第3章【#04 こあくまの欲望】完了"
     },
-    "s4ML55": {
-      "title": "アップデート予定",
-      "description": "未確認エリア：屈折した欲望【】確認"
+    "s4ML61": {
+      "title": "聞きたかった一言",
+      "description": "ストーリー-第3章【#10 万華鏡の孵化場】完了"
     },
-    "s4ML56": {
-      "title": "アップデート予定",
-      "description": "未確認エリア：屈折した欲望【】確認"
+    "s4ML62": {
+      "title": "腐敗した混沌",
+      "description": "ストーリー-第3章【#11 純粋な本性の虚像】完了"
     },
-    "s4ML57": {
-      "title": "アップデート予定",
-      "description": "未確認エリア：屈折した欲望【】確認"
-    },
-    "s4ML58": {
-      "title": "アップデート予定",
-      "description": "未確認エリア：屈折した欲望【】確認"
+    "s4ML63": {
+      "title": "過去は過去にすぎない",
+      "description": "ストーリー-第3章【#13 エピローグⅡ】完了"
     },
     "s4CA1": {
       "title": "カオス征服Ⅰ",
@@ -1138,16 +1134,16 @@
       "description": "【万華鏡の孵化場】クリア挑戦課題すべて達成"
     },
     "s4CA67": {
-      "title": "アップデート予定です。",
-      "description": ""
+      "title": "着替えるべきか？",
+      "description": "オルガと一緒に未確認エリア【エッセンスが流れる地】でエッセンスに身を浸す"
     },
     "s4CA68": {
-      "title": "アップデート予定です。",
-      "description": ""
+      "title": "欲張り",
+      "description": "オルガと一緒に未確認エリア【貪欲が導く場所】で最も深い罠へ入る"
     },
     "s4CA69": {
-      "title": "アップデート予定です。",
-      "description": ""
+      "title": "混沌の卵を砕く者",
+      "description": "カオス-【万華鏡の孵化場】の混沌の核に到達した状態で6回クリア"
     },
     "s4BR1": {
       "title": "すべての色の収集家",
@@ -1206,12 +1202,12 @@
       "description": "カオス【万華鏡の孵化場】中心部でアヴァルク撃破"
     },
     "s4BR15": {
-      "title": "アップデート予定です。",
-      "description": ""
+      "title": "残された欠片",
+      "description": "カオス-【万華鏡の孵化場】混沌の核でアネス/パラネスと戦闘中、パラネスの破片のHPを5回0にすると完了"
     },
     "s4BR16": {
-      "title": "アップデート予定です。",
-      "description": ""
+      "title": "終わりなき渇望",
+      "description": "カオス【万華鏡の孵化場】混沌の核でアネス/パラネス撃破"
     },
     "s4AN1": {
       "title": "星雲の歪み-【ベルキュラ】撃破",
@@ -1397,7 +1393,16 @@
       "prism_of_all_things": "万象のプリズム",
       "condensed_world": "凝縮された世界",
       "perfect_taxidermy": "完璧な剥製",
-      "proof_of_the_fittest": "適者の証明"
+      "proof_of_the_fittest": "適者の証明",
+      "greed_scythe": "強欲の大鎌",
+      "shattered_light_olga": "砕けた光と爪・オルガ",
+      "emilys_sword": "エミリーの剣",
+      "shattered_light_anes": "砕けた光と爪・アネス",
+      "id_card_pagna": "IDカード・惑星パグナ",
+      "save_data_pagna": "セーブデータ・惑星パグナ",
+      "petit_anes": "プチアネス",
+      "id_card_kaleidoscope_hatchery": "IDカード・万華鏡の孵化場",
+      "save_data_kaleidoscope_hatchery": "セーブデータ・万華鏡の孵化場"
     }
   }
 }

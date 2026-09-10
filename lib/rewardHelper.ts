@@ -222,6 +222,43 @@ const REWARD_MAP: Record<RewardKey, { image: string; altKey: string }> = {
     image: "/rewards/season4/proof_of_the_fittest.png",
     altKey: "rewards.season4.proof_of_the_fittest",
   },
+  // season 4 part 3 (issue #51) — dedicated art not available yet, using placeholder image
+  greed_scythe: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season4.greed_scythe",
+  },
+  shattered_light_olga: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season4.shattered_light_olga",
+  },
+  emilys_sword: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season4.emilys_sword",
+  },
+  shattered_light_anes: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season4.shattered_light_anes",
+  },
+  id_card_pagna: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season4.id_card_pagna",
+  },
+  save_data_pagna: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season4.save_data_pagna",
+  },
+  petit_anes: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season4.petit_anes",
+  },
+  id_card_kaleidoscope_hatchery: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season4.id_card_kaleidoscope_hatchery",
+  },
+  save_data_kaleidoscope_hatchery: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season4.save_data_kaleidoscope_hatchery",
+  },
 };
 
 export function rewardOf(key: RewardKey, amount?: number): Reward {

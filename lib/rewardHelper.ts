@@ -259,6 +259,47 @@ const REWARD_MAP: Record<RewardKey, { image: string; altKey: string }> = {
     image: "/rewards/crystal.png",
     altKey: "rewards.season4.save_data_kaleidoscope_hatchery",
   },
+  // season 5 — dedicated art is not available yet, so use the existing placeholder.
+  completed_memory: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season5.completed_memory",
+  },
+  trace_of_glorious_past: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season5.trace_of_glorious_past",
+  },
+  protected_promise: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season5.protected_promise",
+  },
+  unfading_memory: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season5.unfading_memory",
+  },
+  guidepost_in_blizzard: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season5.guidepost_in_blizzard",
+  },
+  promise_exchanged_in_snow: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season5.promise_exchanged_in_snow",
+  },
+  promise_exchanged_in_snow_hilde: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season5.promise_exchanged_in_snow_hilde",
+  },
+  ruler_of_snowfield: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season5.ruler_of_snowfield",
+  },
+  unfrozen_will: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season5.unfrozen_will",
+  },
+  frozen_civilization_legacy: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season5.frozen_civilization_legacy",
+  },
 };
 
 export function rewardOf(key: RewardKey, amount?: number): Reward {

@@ -72,7 +72,18 @@ export type RewardKey =
   | "save_data_pagna"
   | "petit_anes"
   | "id_card_kaleidoscope_hatchery"
-  | "save_data_kaleidoscope_hatchery";
+  | "save_data_kaleidoscope_hatchery"
+  // season 5
+  | "completed_memory"
+  | "trace_of_glorious_past"
+  | "protected_promise"
+  | "unfading_memory"
+  | "guidepost_in_blizzard"
+  | "promise_exchanged_in_snow"
+  | "promise_exchanged_in_snow_hilde"
+  | "ruler_of_snowfield"
+  | "unfrozen_will"
+  | "frozen_civilization_legacy";
 
 export interface Reward {
   image: string;

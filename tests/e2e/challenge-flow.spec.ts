@@ -6,6 +6,15 @@ async function switchToSeason3(page: Page) {
   });
 }
 
+test("season 5 is selected by default and its challenges are visible", async ({ page }) => {
+  await page.goto("/");
+
+  await expect(page.getByRole("combobox", { name: "シーズンを選択" })).toHaveValue("season-5");
+  await expect(
+    page.getByRole("checkbox", { name: "【雪に交わした約束】今週の達成スコア2000達成" }),
+  ).toBeVisible();
+});
+
 test("clicking a sidebar tab switches the active tab and updates task list", async ({ page }) => {
   await page.goto("/");
   await switchToSeason3(page);

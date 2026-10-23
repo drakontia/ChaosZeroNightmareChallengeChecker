@@ -1,8 +1,9 @@
 import { ChallengeTab } from "@/types";
 import { season3 } from "./seasons/season3";
 import { season4 } from "./seasons/season4";
+import { season5 } from "./seasons/season5";
 
-export { season3, season4 };
+export { season3, season4, season5 };
 
 export const challengeTabs: ChallengeTab[] = [
   { id: "weekly-score", labelKey: "tabs.weeklyScore" },
@@ -12,7 +13,7 @@ export const challengeTabs: ChallengeTab[] = [
   { id: "annihilation", labelKey: "tabs.annihilation" },
 ];
 
-export const seasons = [season3, season4];
+export const seasons = [season3, season4, season5];
 
 export const defaultSeasonId =
-  seasons.find((season) => season.id === "season-4")?.id ?? seasons[0].id;
+  seasons.find((season) => season.id === "season-5")?.id ?? seasons[0].id;

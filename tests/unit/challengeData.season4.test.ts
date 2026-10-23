@@ -2,12 +2,12 @@ import { describe, expect, test } from "vitest";
 import { defaultSeasonId, seasons } from "@/lib/challengeData";
 
 describe("season 4 data onboarding", () => {
-  test("registers season-4 and makes it the default season", () => {
+  test("keeps season-4 available when season-5 is the default", () => {
     const season4 = seasons.find((season) => season.id === "season-4");
 
     expect(season4).toBeDefined();
     expect(season4?.nameKey).toBe("season.s4");
-    expect(defaultSeasonId).toBe("season-4");
+    expect(defaultSeasonId).toBe("season-5");
   });
 
   test("imports all season-4 tasks from the issue table", () => {
@@ -39,10 +39,9 @@ describe("season 4 data onboarding", () => {
     expect(rawAltKeys, "reward altKey must not use raw: prefix").toHaveLength(0);
   });
 
-  test("defaultSeasonId falls back to seasons[0].id when season-4 is absent", () => {
-    // This tests the ?? fallback branch in challengeData.ts
-    const mockSeasons = [{ id: "season-3" }, { id: "season-5" }];
-    const result = mockSeasons.find((s) => s.id === "season-4")?.id ?? mockSeasons[0].id;
+  test("defaultSeasonId falls back to seasons[0].id when season-5 is absent", () => {
+    const mockSeasons = [{ id: "season-3" }, { id: "season-4" }];
+    const result = mockSeasons.find((s) => s.id === "season-5")?.id ?? mockSeasons[0].id;
 
     expect(result).toBe("season-3");
   });

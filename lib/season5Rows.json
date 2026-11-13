@@ -185,50 +185,50 @@
   },
   {
     "category": "任務記録",
-    "title": "アップデート予定です。",
-    "description": "未確認エリア：屈折した欲望【】確認",
-    "reward": "",
-    "progress": "",
+    "title": "炎の主",
+    "description": "ストーリー-第2章【#02 救出】完了",
+    "reward": "恍惚の結晶石×100、雪に交わした約束・ブレイズベル",
+    "progress": "0/1",
     "parent": ""
   },
   {
     "category": "任務記録",
-    "title": "アップデート予定です。",
-    "description": "未確認エリア：屈折した欲望【】確認",
-    "reward": "",
-    "progress": "",
+    "title": "抱きしめた塵",
+    "description": "ストーリー-第2章【#07 彼の処刑】完了",
+    "reward": "恍惚の結晶石×100、ヴィヴィアンの角",
+    "progress": "0/1",
     "parent": ""
   },
   {
     "category": "任務記録",
-    "title": "アップデート予定です。",
-    "description": "未確認エリア：屈折した欲望【】確認",
-    "reward": "",
-    "progress": "",
+    "title": "狩りを、やってみませんか",
+    "description": "ストーリー-第2章【#09 激突】完了",
+    "reward": "恍惚の結晶石×100、ブレイズベルの角",
+    "progress": "0/1",
     "parent": ""
   },
   {
     "category": "任務記録",
-    "title": "アップデート予定です。",
-    "description": "未確認エリア：屈折した欲望【】確認",
-    "reward": "",
-    "progress": "",
+    "title": "最後まで残したもの",
+    "description": "ストーリー-第2章【#10 回収】完了",
+    "reward": "恍惚の結晶石×100、ユニット×24,000",
+    "progress": "0/1",
     "parent": ""
   },
   {
     "category": "任務記録",
-    "title": "アップデート予定です。",
-    "description": "未確認エリア：屈折した欲望【】確認",
-    "reward": "",
-    "progress": "",
+    "title": "僕を信じて",
+    "description": "未確認エリア：記憶の果て【記憶：僕を信じて】確認",
+    "reward": "恍惚の結晶石×300",
+    "progress": "0/1",
     "parent": ""
   },
   {
     "category": "任務記録",
-    "title": "アップデート予定です。",
-    "description": "未確認エリア：屈折した欲望【】確認",
-    "reward": "",
-    "progress": "",
+    "title": "燃えなかったもの",
+    "description": "ブレイズベルと一緒に未確認エリア：記憶の果て【記憶：僕を信じて】確認",
+    "reward": "恍惚の結晶石×500",
+    "progress": "0/1",
     "parent": ""
   },
   {
@@ -809,18 +809,18 @@
   },
   {
     "category": "カオス究明",
-    "title": "アップデート予定です。",
-    "description": "",
-    "reward": "",
-    "progress": "",
+    "title": "ブレイズベルの判決",
+    "description": "ブレイズベルと一緒に未確認エリア【定められた判決】で、兵士を助けようと答える",
+    "reward": "恍惚の結晶石×200",
+    "progress": "0/1",
     "parent": ""
   },
   {
     "category": "カオス究明",
-    "title": "アップデート予定です。",
-    "description": "",
-    "reward": "",
-    "progress": "",
+    "title": "見たくない顔",
+    "description": "ブレイズベルと一緒に未確認エリア【揺らぐ信仰】で市長の銅像を調べる",
+    "reward": "恍惚の結晶石×200",
+    "progress": "0/1",
     "parent": ""
   },
   {
@@ -961,19 +961,19 @@
   },
   {
     "category": "戦闘報告",
-    "title": "アップデート予定です。",
-    "description": "",
-    "reward": "",
-    "progress": "",
+    "title": "裂けた審判",
+    "description": "カオス - 【天井の防壁】記憶の果てで【審判の代理人】との戦闘中に【罪悪】を排除してから戦闘に勝利",
+    "reward": "恍惚の結晶石×2,000",
+    "progress": "0/1",
     "parent": "極地専門ハンター"
   },
   {
     "category": "戦闘報告",
-    "title": "アップデート予定です。",
-    "description": "",
-    "reward": "",
-    "progress": "",
-    "parent": "極地専門ハンター"
+    "title": "交差する神聖",
+    "description": "カオス -【天上の防壁】記憶の果てで審判の代理人を撃破",
+    "reward": "IDカード・願いの木、セーブデータ・願いの木",
+    "progress": "0/1",
+    "parent": ""
   },
   {
     "category": "戦闘報告",

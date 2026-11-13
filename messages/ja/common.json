@@ -1423,28 +1423,28 @@
       "description": "【雪に交わした約束】シーズン内すべての銀河勲章挑戦課題達成"
     },
     "s5ML19": {
-      "title": "アップデート予定です。",
-      "description": "未確認エリア：屈折した欲望【】確認"
+      "title": "炎の主",
+      "description": "ストーリー-第2章【#02 救出】完了"
     },
     "s5ML20": {
-      "title": "アップデート予定です。",
-      "description": "未確認エリア：屈折した欲望【】確認"
+      "title": "抱きしめた塵",
+      "description": "ストーリー-第2章【#07 彼の処刑】完了"
     },
     "s5ML21": {
-      "title": "アップデート予定です。",
-      "description": "未確認エリア：屈折した欲望【】確認"
+      "title": "狩りを、やってみませんか",
+      "description": "ストーリー-第2章【#09 激突】完了"
     },
     "s5ML22": {
-      "title": "アップデート予定です。",
-      "description": "未確認エリア：屈折した欲望【】確認"
+      "title": "最後まで残したもの",
+      "description": "ストーリー-第2章【#10 回収】完了"
     },
     "s5ML23": {
-      "title": "アップデート予定です。",
-      "description": "未確認エリア：屈折した欲望【】確認"
+      "title": "僕を信じて",
+      "description": "未確認エリア：記憶の果て【記憶：僕を信じて】確認"
     },
     "s5ML24": {
-      "title": "アップデート予定です。",
-      "description": "未確認エリア：屈折した欲望【】確認"
+      "title": "燃えなかったもの",
+      "description": "ブレイズベルと一緒に未確認エリア：記憶の果て【記憶：僕を信じて】確認"
     },
     "s5ML25": {
       "title": "アップデート予定です。",
@@ -1735,12 +1735,12 @@
       "description": "カオス-【天上の防壁】30回クリア"
     },
     "s5CA67": {
-      "title": "アップデート予定です。",
-      "description": ""
+      "title": "ブレイズベルの判決",
+      "description": "ブレイズベルと一緒に未確認エリア【定められた判決】で、兵士を助けようと答える"
     },
     "s5CA68": {
-      "title": "アップデート予定です。",
-      "description": ""
+      "title": "見たくない顔",
+      "description": "ブレイズベルと一緒に未確認エリア【揺らぐ信仰】で市長の銅像を調べる"
     },
     "s5CA69": {
       "title": "アップデート予定です。",
@@ -1811,12 +1811,12 @@
       "description": "カオス-【天上の防壁】のモンスター探査度90%達成"
     },
     "s5BR16": {
-      "title": "アップデート予定です。",
-      "description": ""
+      "title": "裂けた審判",
+      "description": "カオス - 【天井の防壁】記憶の果てで【審判の代理人】との戦闘中に【罪悪】を排除してから戦闘に勝利"
     },
     "s5BR17": {
-      "title": "アップデート予定です。",
-      "description": ""
+      "title": "交差する神聖",
+      "description": "カオス -【天上の防壁】記憶の果てで審判の代理人を撃破"
     },
     "s5BR18": {
       "title": "アップデート予定です。",
@@ -2031,7 +2031,12 @@
       "promise_exchanged_in_snow_hilde": "雪に交わした約束ヒルデ",
       "ruler_of_snowfield": "雪原の支配者",
       "unfrozen_will": "凍てつかぬ意志",
-      "frozen_civilization_legacy": "凍てつく文明の遺産"
+      "frozen_civilization_legacy": "凍てつく文明の遺産",
+      "promise_exchanged_in_snow_blazebell": "雪に交わした約束・ブレイズベル",
+      "vivians_horn": "ヴィヴィアンの角",
+      "blaze_bells_horn": "ブレイズベルの角",
+      "id_card_tree_of_wishes": "IDカード・願いの木",
+      "save_data_tree_of_wishes": "セーブデータ・願いの木"
     }
   }
 }

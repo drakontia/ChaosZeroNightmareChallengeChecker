@@ -300,6 +300,26 @@ const REWARD_MAP: Record<RewardKey, { image: string; altKey: string }> = {
     image: "/rewards/crystal.png",
     altKey: "rewards.season5.frozen_civilization_legacy",
   },
+  promise_exchanged_in_snow_blazebell: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season5.promise_exchanged_in_snow_blazebell",
+  },
+  vivians_horn: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season5.vivians_horn",
+  },
+  blaze_bells_horn: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season5.blaze_bells_horn",
+  },
+  id_card_tree_of_wishes: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season5.id_card_tree_of_wishes",
+  },
+  save_data_tree_of_wishes: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season5.save_data_tree_of_wishes",
+  },
 };
 
 export function rewardOf(key: RewardKey, amount?: number): Reward {

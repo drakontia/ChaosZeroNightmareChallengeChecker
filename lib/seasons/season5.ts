@@ -269,7 +269,7 @@ export const season5: Season = {
             titleKey: "tasks.s5ML19.title",
             descriptionKey: "tasks.s5ML19.description",
             rewards: [
-              rewardOf("ecstatic_crystal", 100),
+              rewardOf("frozen_civilization_legacy", 100),
               rewardOf("promise_exchanged_in_snow_blazebell"),
             ],
             progressMax: 1,
@@ -280,7 +280,7 @@ export const season5: Season = {
             titleKey: "tasks.s5ML20.title",
             descriptionKey: "tasks.s5ML20.description",
             rewards: [
-              rewardOf("ecstatic_crystal", 100),
+              rewardOf("frozen_civilization_legacy", 100),
               rewardOf("vivians_horn"),
             ],
             progressMax: 1,
@@ -291,7 +291,7 @@ export const season5: Season = {
             titleKey: "tasks.s5ML21.title",
             descriptionKey: "tasks.s5ML21.description",
             rewards: [
-              rewardOf("ecstatic_crystal", 100),
+              rewardOf("frozen_civilization_legacy", 100),
               rewardOf("blaze_bells_horn"),
             ],
             progressMax: 1,
@@ -302,7 +302,7 @@ export const season5: Season = {
             titleKey: "tasks.s5ML22.title",
             descriptionKey: "tasks.s5ML22.description",
             rewards: [
-              rewardOf("ecstatic_crystal", 100),
+              rewardOf("frozen_civilization_legacy", 100),
               rewardOf("unit", 24000),
             ],
             progressMax: 1,
@@ -313,7 +313,7 @@ export const season5: Season = {
             titleKey: "tasks.s5ML23.title",
             descriptionKey: "tasks.s5ML23.description",
             rewards: [
-              rewardOf("ecstatic_crystal", 300),
+              rewardOf("frozen_civilization_legacy", 300),
             ],
             progressMax: 1,
           },
@@ -323,7 +323,7 @@ export const season5: Season = {
             titleKey: "tasks.s5ML24.title",
             descriptionKey: "tasks.s5ML24.description",
             rewards: [
-              rewardOf("ecstatic_crystal", 500),
+              rewardOf("frozen_civilization_legacy", 500),
             ],
             progressMax: 1,
           },
@@ -1017,7 +1017,7 @@ export const season5: Season = {
             titleKey: "tasks.s5CA67.title",
             descriptionKey: "tasks.s5CA67.description",
             rewards: [
-              rewardOf("ecstatic_crystal", 200),
+              rewardOf("frozen_civilization_legacy", 200),
             ],
             progressMax: 1,
           },
@@ -1027,7 +1027,7 @@ export const season5: Season = {
             titleKey: "tasks.s5CA68.title",
             descriptionKey: "tasks.s5CA68.description",
             rewards: [
-              rewardOf("ecstatic_crystal", 200),
+              rewardOf("frozen_civilization_legacy", 200),
             ],
             progressMax: 1,
           },
@@ -1199,7 +1199,7 @@ export const season5: Season = {
             titleKey: "tasks.s5BR16.title",
             descriptionKey: "tasks.s5BR16.description",
             rewards: [
-              rewardOf("ecstatic_crystal", 2000),
+              rewardOf("frozen_civilization_legacy", 2000),
             ],
             progressMax: 1,
             isChild: true,

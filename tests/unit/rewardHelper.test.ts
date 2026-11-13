@@ -48,6 +48,24 @@ describe("rewardOf", () => {
     expect(theater.altKey).toBe("rewards.season3.phantom_theater");
   });
 
+  test("maps season 5 rewards to their dedicated images", () => {
+    const rewards = [
+      ["promise_exchanged_in_snow_blazebell", "/rewards/season5/promise_exchanged_in_snow_blazebell.png"],
+      ["vivians_horn", "/rewards/season5/vivians_horn.png"],
+      ["blaze_bells_horn", "/rewards/season5/blaze_bells_horn.png"],
+      ["frozen_civilization_legacy", "/rewards/season5/frozen_civilization_legacy.png"],
+      ["rossweisse_dual_swords", "/rewards/season5/rossweisse_dual_swords.png"],
+      ["sig_ornament", "/rewards/season5/sig_ornament.png"],
+      ["promise_exchanged_in_snow_rossweisse", "/rewards/season5/promise_exchanged_in_snow_rossweisse.png"],
+      ["unfrozen_will", "/rewards/season5/unfrozen_will.png"],
+      ["promise_exchanged_in_snow", "/rewards/season5/promise_exchanged_in_snow.png"],
+    ] as const;
+
+    for (const [key, image] of rewards) {
+      expect(rewardOf(key).image).toBe(image);
+    }
+  });
+
   test("each reward key maps to a unique image path", () => {
     const keys = [
       "flawless_melody",

@@ -88,7 +88,10 @@ export type RewardKey =
   | "vivians_horn"
   | "blaze_bells_horn"
   | "id_card_tree_of_wishes"
-  | "save_data_tree_of_wishes";
+  | "save_data_tree_of_wishes"
+  | "rossweisse_dual_swords"
+  | "sig_ornament"
+  | "promise_exchanged_in_snow_rossweisse";
 
 export interface Reward {
   image: string;

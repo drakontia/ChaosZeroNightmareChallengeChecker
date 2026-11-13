@@ -41,6 +41,8 @@ describe("season 5 challenge data", () => {
     const taskMessages = jaMessages.tasks as Record<string, { title?: string; description?: string }>;
     const season5Rewards = (jaMessages.rewards as { season5?: Record<string, string> }).season5 ?? {};
 
+    expect(season5Rewards.frozen_civilization_legacy).toBe("凍てつく文明の資産");
+
     for (const task of tasks) {
       const [, key] = task.titleKey.split(".");
       expect(taskMessages[key]?.title, `${key} title`).toBeDefined();
@@ -79,63 +81,63 @@ describe("season 5 challenge data", () => {
         title: "炎の主",
         description: "ストーリー-第2章【#02 救出】完了",
         progressMax: 1,
-        rewards: ["rewards.season4.ecstatic_crystal:100", "rewards.season5.promise_exchanged_in_snow_blazebell"],
+        rewards: ["rewards.season5.frozen_civilization_legacy:100", "rewards.season5.promise_exchanged_in_snow_blazebell"],
       },
       {
         category: "mission-log",
         title: "抱きしめた塵",
         description: "ストーリー-第2章【#07 彼の処刑】完了",
         progressMax: 1,
-        rewards: ["rewards.season4.ecstatic_crystal:100", "rewards.season5.vivians_horn"],
+        rewards: ["rewards.season5.frozen_civilization_legacy:100", "rewards.season5.vivians_horn"],
       },
       {
         category: "mission-log",
         title: "狩りを、やってみませんか",
         description: "ストーリー-第2章【#09 激突】完了",
         progressMax: 1,
-        rewards: ["rewards.season4.ecstatic_crystal:100", "rewards.season5.blaze_bells_horn"],
+        rewards: ["rewards.season5.frozen_civilization_legacy:100", "rewards.season5.blaze_bells_horn"],
       },
       {
         category: "mission-log",
         title: "最後まで残したもの",
         description: "ストーリー-第2章【#10 回収】完了",
         progressMax: 1,
-        rewards: ["rewards.season4.ecstatic_crystal:100", "rewards.unit:24000"],
+        rewards: ["rewards.season5.frozen_civilization_legacy:100", "rewards.unit:24000"],
       },
       {
         category: "mission-log",
         title: "僕を信じて",
         description: "未確認エリア：記憶の果て【記憶：僕を信じて】確認",
         progressMax: 1,
-        rewards: ["rewards.season4.ecstatic_crystal:300"],
+        rewards: ["rewards.season5.frozen_civilization_legacy:300"],
       },
       {
         category: "mission-log",
         title: "燃えなかったもの",
         description: "ブレイズベルと一緒に未確認エリア：記憶の果て【記憶：僕を信じて】確認",
         progressMax: 1,
-        rewards: ["rewards.season4.ecstatic_crystal:500"],
+        rewards: ["rewards.season5.frozen_civilization_legacy:500"],
       },
       {
         category: "chaos-analysis",
         title: "ブレイズベルの判決",
         description: "ブレイズベルと一緒に未確認エリア【定められた判決】で、兵士を助けようと答える",
         progressMax: 1,
-        rewards: ["rewards.season4.ecstatic_crystal:200"],
+        rewards: ["rewards.season5.frozen_civilization_legacy:200"],
       },
       {
         category: "chaos-analysis",
         title: "見たくない顔",
         description: "ブレイズベルと一緒に未確認エリア【揺らぐ信仰】で市長の銅像を調べる",
         progressMax: 1,
-        rewards: ["rewards.season4.ecstatic_crystal:200"],
+        rewards: ["rewards.season5.frozen_civilization_legacy:200"],
       },
       {
         category: "battle-report",
         title: "裂けた審判",
         description: "カオス - 【天井の防壁】記憶の果てで【審判の代理人】との戦闘中に【罪悪】を排除してから戦闘に勝利",
         progressMax: 1,
-        rewards: ["rewards.season4.ecstatic_crystal:2000"],
+        rewards: ["rewards.season5.frozen_civilization_legacy:2000"],
       },
       {
         category: "battle-report",

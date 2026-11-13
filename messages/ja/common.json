@@ -1367,24 +1367,24 @@
       "description": "ストーリー-第1章【#11 審判の代理人】完了"
     },
     "s5ML5": {
-      "title": "凍てつく文明の遺産Ⅰ",
-      "description": "凍てつく文明の遺産10,000個獲得"
+      "title": "凍てつく文明の資産Ⅰ",
+      "description": "凍てつく文明の資産10,000個獲得"
     },
     "s5ML6": {
-      "title": "凍てつく文明の遺産Ⅱ",
-      "description": "凍てつく文明の遺産30,000個獲得"
+      "title": "凍てつく文明の資産Ⅱ",
+      "description": "凍てつく文明の資産30,000個獲得"
     },
     "s5ML7": {
-      "title": "凍てつく文明の遺産Ⅲ",
-      "description": "凍てつく文明の遺産50,000個獲得"
+      "title": "凍てつく文明の資産Ⅲ",
+      "description": "凍てつく文明の資産50,000個獲得"
     },
     "s5ML8": {
-      "title": "凍てつく文明の遺産Ⅳ",
-      "description": "凍てつく文明の遺産100,000個獲得"
+      "title": "凍てつく文明の資産Ⅳ",
+      "description": "凍てつく文明の資産100,000個獲得"
     },
     "s5ML9": {
-      "title": "凍てつく文明の遺産Ⅴ",
-      "description": "凍てつく文明の遺産150,000個獲得"
+      "title": "凍てつく文明の資産Ⅴ",
+      "description": "凍てつく文明の資産150,000個獲得"
     },
     "s5ML10": {
       "title": "雪に交わした記憶Ⅰ",
@@ -2031,12 +2031,15 @@
       "promise_exchanged_in_snow_hilde": "雪に交わした約束ヒルデ",
       "ruler_of_snowfield": "雪原の支配者",
       "unfrozen_will": "凍てつかぬ意志",
-      "frozen_civilization_legacy": "凍てつく文明の遺産",
+      "frozen_civilization_legacy": "凍てつく文明の資産",
       "promise_exchanged_in_snow_blazebell": "雪に交わした約束・ブレイズベル",
       "vivians_horn": "ヴィヴィアンの角",
       "blaze_bells_horn": "ブレイズベルの角",
       "id_card_tree_of_wishes": "IDカード・願いの木",
-      "save_data_tree_of_wishes": "セーブデータ・願いの木"
+      "save_data_tree_of_wishes": "セーブデータ・願いの木",
+      "rossweisse_dual_swords": "ロスヴァイセの双剣",
+      "sig_ornament": "シグの飾り",
+      "promise_exchanged_in_snow_rossweisse": "雪に交わした約束・ロスヴァイセ"
     }
   }
 }

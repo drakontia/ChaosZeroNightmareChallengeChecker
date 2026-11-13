@@ -281,7 +281,7 @@ const REWARD_MAP: Record<RewardKey, { image: string; altKey: string }> = {
     altKey: "rewards.season5.guidepost_in_blizzard",
   },
   promise_exchanged_in_snow: {
-    image: "/rewards/crystal.png",
+    image: "/rewards/season5/promise_exchanged_in_snow.png",
     altKey: "rewards.season5.promise_exchanged_in_snow",
   },
   promise_exchanged_in_snow_hilde: {
@@ -293,12 +293,44 @@ const REWARD_MAP: Record<RewardKey, { image: string; altKey: string }> = {
     altKey: "rewards.season5.ruler_of_snowfield",
   },
   unfrozen_will: {
-    image: "/rewards/crystal.png",
+    image: "/rewards/season5/unfrozen_will.png",
     altKey: "rewards.season5.unfrozen_will",
   },
   frozen_civilization_legacy: {
-    image: "/rewards/crystal.png",
+    image: "/rewards/season5/frozen_civilization_legacy.png",
     altKey: "rewards.season5.frozen_civilization_legacy",
+  },
+  promise_exchanged_in_snow_blazebell: {
+    image: "/rewards/season5/promise_exchanged_in_snow_blazebell.png",
+    altKey: "rewards.season5.promise_exchanged_in_snow_blazebell",
+  },
+  vivians_horn: {
+    image: "/rewards/season5/vivians_horn.png",
+    altKey: "rewards.season5.vivians_horn",
+  },
+  blaze_bells_horn: {
+    image: "/rewards/season5/blaze_bells_horn.png",
+    altKey: "rewards.season5.blaze_bells_horn",
+  },
+  id_card_tree_of_wishes: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season5.id_card_tree_of_wishes",
+  },
+  save_data_tree_of_wishes: {
+    image: "/rewards/crystal.png",
+    altKey: "rewards.season5.save_data_tree_of_wishes",
+  },
+  rossweisse_dual_swords: {
+    image: "/rewards/season5/rossweisse_dual_swords.png",
+    altKey: "rewards.season5.rossweisse_dual_swords",
+  },
+  sig_ornament: {
+    image: "/rewards/season5/sig_ornament.png",
+    altKey: "rewards.season5.sig_ornament",
+  },
+  promise_exchanged_in_snow_rossweisse: {
+    image: "/rewards/season5/promise_exchanged_in_snow_rossweisse.png",
+    altKey: "rewards.season5.promise_exchanged_in_snow_rossweisse",
   },
 };
 

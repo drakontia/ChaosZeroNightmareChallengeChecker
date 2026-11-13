@@ -83,7 +83,15 @@ export type RewardKey =
   | "promise_exchanged_in_snow_hilde"
   | "ruler_of_snowfield"
   | "unfrozen_will"
-  | "frozen_civilization_legacy";
+  | "frozen_civilization_legacy"
+  | "promise_exchanged_in_snow_blazebell"
+  | "vivians_horn"
+  | "blaze_bells_horn"
+  | "id_card_tree_of_wishes"
+  | "save_data_tree_of_wishes"
+  | "rossweisse_dual_swords"
+  | "sig_ornament"
+  | "promise_exchanged_in_snow_rossweisse";
 
 export interface Reward {
   image: string;

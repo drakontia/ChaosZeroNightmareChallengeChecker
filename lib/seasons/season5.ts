@@ -268,36 +268,64 @@ export const season5: Season = {
             status: "manual",
             titleKey: "tasks.s5ML19.title",
             descriptionKey: "tasks.s5ML19.description",
+            rewards: [
+              rewardOf("frozen_civilization_legacy", 100),
+              rewardOf("promise_exchanged_in_snow_blazebell"),
+            ],
+            progressMax: 1,
           },
           {
             id: "s5-ml-20",
             status: "manual",
             titleKey: "tasks.s5ML20.title",
             descriptionKey: "tasks.s5ML20.description",
+            rewards: [
+              rewardOf("frozen_civilization_legacy", 100),
+              rewardOf("vivians_horn"),
+            ],
+            progressMax: 1,
           },
           {
             id: "s5-ml-21",
             status: "manual",
             titleKey: "tasks.s5ML21.title",
             descriptionKey: "tasks.s5ML21.description",
+            rewards: [
+              rewardOf("frozen_civilization_legacy", 100),
+              rewardOf("blaze_bells_horn"),
+            ],
+            progressMax: 1,
           },
           {
             id: "s5-ml-22",
             status: "manual",
             titleKey: "tasks.s5ML22.title",
             descriptionKey: "tasks.s5ML22.description",
+            rewards: [
+              rewardOf("frozen_civilization_legacy", 100),
+              rewardOf("unit", 24000),
+            ],
+            progressMax: 1,
           },
           {
             id: "s5-ml-23",
             status: "manual",
             titleKey: "tasks.s5ML23.title",
             descriptionKey: "tasks.s5ML23.description",
+            rewards: [
+              rewardOf("frozen_civilization_legacy", 300),
+            ],
+            progressMax: 1,
           },
           {
             id: "s5-ml-24",
             status: "manual",
             titleKey: "tasks.s5ML24.title",
             descriptionKey: "tasks.s5ML24.description",
+            rewards: [
+              rewardOf("frozen_civilization_legacy", 500),
+            ],
+            progressMax: 1,
           },
           {
             id: "s5-ml-25",
@@ -988,12 +1016,20 @@ export const season5: Season = {
             status: "manual",
             titleKey: "tasks.s5CA67.title",
             descriptionKey: "tasks.s5CA67.description",
+            rewards: [
+              rewardOf("frozen_civilization_legacy", 200),
+            ],
+            progressMax: 1,
           },
           {
             id: "s5-ca-68",
             status: "manual",
             titleKey: "tasks.s5CA68.title",
             descriptionKey: "tasks.s5CA68.description",
+            rewards: [
+              rewardOf("frozen_civilization_legacy", 200),
+            ],
+            progressMax: 1,
           },
           {
             id: "s5-ca-69",
@@ -1104,7 +1140,7 @@ export const season5: Season = {
             rewards: [
               rewardOf("perfect_taxidermy"),
             ],
-            childIds: ["s5-br-11", "s5-br-12", "s5-br-13", "s5-br-16", "s5-br-17"],
+            childIds: ["s5-br-11", "s5-br-12", "s5-br-13", "s5-br-16"],
           },
           {
             id: "s5-br-11",
@@ -1162,6 +1198,10 @@ export const season5: Season = {
             status: "manual",
             titleKey: "tasks.s5BR16.title",
             descriptionKey: "tasks.s5BR16.description",
+            rewards: [
+              rewardOf("frozen_civilization_legacy", 2000),
+            ],
+            progressMax: 1,
             isChild: true,
           },
           {
@@ -1169,7 +1209,11 @@ export const season5: Season = {
             status: "manual",
             titleKey: "tasks.s5BR17.title",
             descriptionKey: "tasks.s5BR17.description",
-            isChild: true,
+            rewards: [
+              rewardOf("id_card_tree_of_wishes"),
+              rewardOf("save_data_tree_of_wishes"),
+            ],
+            progressMax: 1,
           },
           {
             id: "s5-br-18",
